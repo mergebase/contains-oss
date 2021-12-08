@@ -18,7 +18,6 @@
 <exclude>com.h2database:h2</exclude>
 <exclude>javax.json:javax.json-api</exclude>
 <exclude>org.glassfish:javax.json</exclude>
-<exclude>org.javassist:javassist</exclude>
             </excludes>
            </dependencySet>
         </dependencySets>

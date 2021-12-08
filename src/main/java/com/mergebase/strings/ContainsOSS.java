@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -27,6 +28,8 @@ import java.util.zip.ZipInputStream;
 
 public class ContainsOSS {
     private static Map<String, Long> HASHES = new HashMap();
+    private static Set<String> DUPLICATES = new HashSet<>();
+
     private static final Comparator<File> FILES_ORDER_BY_PATH = new Comparator<File>() {
         public int compare(File f1, File f2) {
             String s1 = f1 != null ? f1.getPath() : "";
@@ -120,26 +123,68 @@ public class ContainsOSS {
         long behaviourTotal = 0L;
         double avg = 0.0D;
 
-        int[] val;
-        for (Iterator var10 = lineCounts.values().iterator(); var10.hasNext(); behaviourTotal += (long) val[1]) {
-            val = (int[]) var10.next();
-            lineTotal += (long) val[0];
+        Map<String, String> groupMapping = Grouper.toGroupings(lineCounts.keySet());
+        Map<String, Long> groupLines = new TreeMap<>();
+        Map<String, Long> groupBehaviours = new TreeMap<>();
+        for (Map.Entry<String, int[]> entry : lineCounts.entrySet()) {
+            String key = entry.getKey();
+            int[] val = entry.getValue();
+            lineTotal += val[0];
+            behaviourTotal += val[1];
+
+            String groupKey = groupMapping.get(key);
+            Long groupLine = groupLines.get(groupKey);
+            Long groupBehaviour = groupBehaviours.get(groupKey);
+            if (groupLine == null) {
+                groupLine = 0L;
+            }
+            if (groupBehaviour == null) {
+                groupBehaviour = 0L;
+            }
+
+            groupLine += val[0];
+            groupBehaviour += val[1];
+            groupLines.put(groupKey, groupLine);
+            groupBehaviours.put(groupKey, groupBehaviour);
         }
 
-        if (lineTotal == 0L) {
-            lineTotal = behaviourTotal * 17L;
-            long mod;
-            if (lineTotal > 1000L) {
-                mod = lineTotal % 1000L;
-                lineTotal -= mod;
-            } else if (lineTotal > 100L) {
-                mod = lineTotal % 100L;
-                lineTotal -= mod;
+
+        Set<String> zeroes = new HashSet<>();
+        for (Map.Entry<String, Long> groupLineEntry : groupLines.entrySet()) {
+            String key = groupLineEntry.getKey();
+            Long count = groupLineEntry.getValue();
+            if (count != null && count == 0) {
+                Long behaviourCount = groupBehaviours.get(key);
+                count = calculateBehaviourHeuristic(count, behaviourCount);
+                groupLineEntry.setValue(count);
+            }
+            if (count == null || count == 0) {
+                zeroes.add(key);
             }
         }
+        groupLines.keySet().removeAll(zeroes);
 
+        lineTotal = calculateBehaviourHeuristic(lineTotal, behaviourTotal);
         results.put(path, lineTotal);
+        results.put(path + ".SUBS", groupLines);
         HASHES.put(path, crc64);
+    }
+
+    private static Long calculateBehaviourHeuristic(Long lineTotal, Long behaviourTotal) {
+        if (lineTotal != null && behaviourTotal != null) {
+            if (lineTotal == 0L) {
+                lineTotal = behaviourTotal * 17L;
+                long mod;
+                if (lineTotal > 1000L) {
+                    mod = lineTotal % 1000L;
+                    lineTotal -= mod;
+                } else if (lineTotal > 100L) {
+                    mod = lineTotal % 100L;
+                    lineTotal -= mod;
+                }
+            }
+        }
+        return lineTotal;
     }
 
     private static boolean containsJava(String zipPath) {
@@ -260,37 +305,47 @@ public class ContainsOSS {
 
         TreeMap<String, Map> result = new TreeMap();
         long total = 0L;
-        Iterator var9 = list.iterator();
 
-        Map m;
-        Iterator var11;
-        while (var9.hasNext()) {
-            m = (Map) var9.next();
-
-            Long val;
-            for (var11 = m.values().iterator(); var11.hasNext(); total += val) {
-                val = (Long) var11.next();
+        HashSet<Long> seenHashes = new HashSet<>();
+        for (Map<String, Object> m : list) {
+            for (Map.Entry<String, Object> entry : m.entrySet()) {
+                String key = entry.getKey();
+                Long crc64 = HASHES.get(key);
+                if (seenHashes.contains(crc64)) {
+                    DUPLICATES.add(key);
+                } else {
+                    seenHashes.add(crc64);
+                    Object o = entry.getValue();
+                    if (o instanceof Long) {
+                        Long val = (Long) o;
+                        total += val;
+                    }
+                }
             }
         }
 
-        var9 = list.iterator();
+        for (Map<String, Object> m : list) {
+            for (Map.Entry<String, Object> entry : m.entrySet()) {
+                Map subMap = new LinkedHashMap();
+                String key = entry.getKey();
+                Object o = entry.getValue();
+                if (o instanceof Long) {
+                    Long crc64 = HASHES.get(key);
+                    if (crc64 != null) {
+                        subMap.put("crc64", crc64);
+                    }
 
-        while (var9.hasNext()) {
-            m = (Map) var9.next();
-
-            String key;
-            LinkedHashMap subMap;
-            for (var11 = m.entrySet().iterator(); var11.hasNext(); result.put(key, subMap)) {
-                Entry<String, Long> entry = (Entry) var11.next();
-                key = (String) entry.getKey();
-                long val = (Long) entry.getValue();
-                double ratio = 100.0D * ((double) val * 1.0D / (double) total);
-                subMap = new LinkedHashMap();
-                subMap.put("percentage", Double.parseDouble(formatter.format(ratio)));
-                subMap.put("lines", val);
-                Long crc64 = (Long) HASHES.get(key);
-                if (crc64 != null) {
-                    subMap.put("crc64", crc64);
+                    if (DUPLICATES.contains(key)) {
+                        subMap.put("isDuplicate", true);
+                    } else {
+                        long val = (Long) entry.getValue();
+                        double ratio = 100.0D * ((double) val * 1.0D / (double) total);
+                        subMap.put("percentage", Double.parseDouble(formatter.format(ratio)));
+                        subMap.put("lines", val);
+                        Map subs = (Map) m.get(key + ".SUBS");
+                        subMap.put("breakdown", subs);
+                    }
+                    result.put(key, subMap);
                 }
             }
         }
@@ -300,27 +355,36 @@ public class ContainsOSS {
             System.out.println("percentage,lines,crc64,path");
         } else {
             System.out.println("{");
+            System.out.println("\"totalLines\":" + total + ",");
+            System.out.println("\"args\":" + Java2Json.format(argsList) + ",\n");
         }
 
         Iterator var29 = result.entrySet().iterator();
 
         while (var29.hasNext()) {
-            Entry<String, Map> entry = (Entry) var29.next();
-            String key = (String) entry.getKey();
-            Map value = (Map) entry.getValue();
-            Double percent = (Double) value.get("percentage");
-            Long lines = (Long) value.get("lines");
-            Long crc64 = (Long) value.get("crc64");
-            String[] row = new String[]{key, percent.toString(), lines.toString(), crc64.toString()};
+            final Entry<String, Map> entry = (Entry) var29.next();
+            String key = entry.getKey();
+            Map value = entry.getValue();
             StringBuilder buf = new StringBuilder();
-            buf.append(row[1]).append(',');
-            buf.append(row[2]).append(',');
-            buf.append(row[3]).append(',');
-            buf.append(row[0]);
+            Long crc64 = (Long) value.get("crc64");
+            if (!value.containsKey("isDuplicate")) {
+                Double percent = (Double) value.get("percentage");
+                Long lines = (Long) value.get("lines");
+                buf.append(percent).append(',');
+                buf.append(lines).append(',');
+                buf.append(crc64).append(',');
+                buf.append(key).append(',');
+            } else {
+                buf.append(",");
+                buf.append(",");
+                buf.append(crc64).append(',');
+                buf.append(key).append(',');
+                buf.append("duplicate");
+            }
             if (printCSV) {
                 System.out.println(buf);
             } else {
-                System.out.println("  " + Java2Json.format(entry));
+                System.out.println("  " + Java2Json.format(true, entry));
             }
         }
 
