@@ -13,7 +13,8 @@ import java.util.Enumeration;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.jar.JarEntry;
-import java.util.jar.JarInputStream;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
 public class JarAnalyzer {
     static final String CLASS_EXT = ".class";
@@ -25,15 +26,15 @@ public class JarAnalyzer {
         this.pool = new ClassPool(true);
     }
 
-    public Enumeration<JarEntry> entries(final JarInputStream jarInputStream) {
-        return new Enumeration<JarEntry>() {
-            JarEntry nextEntry = null;
+    public Enumeration<ZipEntry> entries(final ZipInputStream jarInputStream) {
+        return new Enumeration<ZipEntry>() {
+            ZipEntry nextEntry = null;
             boolean done = false;
 
             private void advance() {
                 if (!this.done && this.nextEntry == null) {
                     try {
-                        this.nextEntry = jarInputStream.getNextJarEntry();
+                        this.nextEntry = jarInputStream.getNextEntry();
                         if (this.nextEntry == null) {
                             this.done = true;
                         }
@@ -41,7 +42,6 @@ public class JarAnalyzer {
                         throw new RuntimeException("Failed to getNextJarEntry() - " + var2, var2);
                     }
                 }
-
             }
 
             public boolean hasMoreElements() {
@@ -49,17 +49,17 @@ public class JarAnalyzer {
                 return !this.done;
             }
 
-            public JarEntry nextElement() {
+            public ZipEntry nextElement() {
                 this.advance();
-                JarEntry je = this.nextEntry;
+                ZipEntry ze = this.nextEntry;
                 this.nextEntry = null;
-                return je;
+                return ze;
             }
         };
     }
 
     public void preloadClasses() {
-        JarInputStream jarIn = this.zipper.getFreshZipStream();
+        ZipInputStream jarIn = this.zipper.getFreshZipStream();
         Enumeration en = this.entries(jarIn);
 
         while (en.hasMoreElements()) {
@@ -76,7 +76,7 @@ public class JarAnalyzer {
 
     }
 
-    private void preloadClass(JarInputStream jarIn, JarEntry je) throws IOException {
+    private void preloadClass(ZipInputStream jarIn, ZipEntry ze) throws IOException {
         CtClass c = this.pool.makeClass(jarIn);
         c.defrost();
 
@@ -130,7 +130,7 @@ public class JarAnalyzer {
     public Map<String, int[]> getLineCounts() {
         Map<String, int[]> result = new TreeMap();
         this.preloadClasses();
-        JarInputStream jarIn = this.zipper.getFreshZipStream();
+        ZipInputStream jarIn = this.zipper.getFreshZipStream();
         Enumeration en = this.entries(jarIn);
 
         while (en.hasMoreElements()) {

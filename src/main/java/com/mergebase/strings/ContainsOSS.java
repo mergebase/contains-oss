@@ -1,10 +1,13 @@
 package com.mergebase.strings;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -29,6 +32,8 @@ import java.util.zip.ZipInputStream;
 public class ContainsOSS {
     private static Map<String, Long> HASHES = new HashMap();
     private static Set<String> DUPLICATES = new HashSet<>();
+    private static Set<String> OPEN_SOURCE_NAMES = new HashSet<>();
+    private static Map<String, String> IDENTITY = new HashMap<>();
 
     private static final Comparator<File> FILES_ORDER_BY_PATH = new Comparator<File>() {
         public int compare(File f1, File f2) {
@@ -109,12 +114,33 @@ public class ContainsOSS {
                     };
                     scanRecursive(fullPath, recursiveZipper, results);
                     JarAnalyzer analyzer = new JarAnalyzer(recursiveZipper);
+
                     analyze(fullPath, analyzer.getLineCounts(), recursiveZipper.crc64(), results);
+
                 } catch (Exception var12) {
                     System.out.println(fullPath + " FAILED: " + var12);
                     var12.printStackTrace(System.out);
                 }
             }
+        }
+    }
+
+    private static String toPkgName(String className) {
+        int x = className.lastIndexOf('.');
+        if (x >= 0) {
+            return identity(className.substring(0, x).trim());
+        } else {
+            return className;
+        }
+    }
+
+    private static String identity(String s) {
+        String ss = IDENTITY.get(s);
+        if (ss != null) {
+            return ss;
+        } else {
+            IDENTITY.put(s, s);
+            return s;
         }
     }
 
@@ -124,7 +150,8 @@ public class ContainsOSS {
         double avg = 0.0D;
 
         Map<String, String> groupMapping = Grouper.toGroupings(lineCounts.keySet());
-        Map<String, Long> groupLines = new TreeMap<>();
+        Map<String, Long> groupLinesInternal = new TreeMap<>();
+        Map<String, Long> groupLinesExternal = new TreeMap<>();
         Map<String, Long> groupBehaviours = new TreeMap<>();
         for (Map.Entry<String, int[]> entry : lineCounts.entrySet()) {
             String key = entry.getKey();
@@ -133,6 +160,11 @@ public class ContainsOSS {
             behaviourTotal += val[1];
 
             String groupKey = groupMapping.get(key);
+
+
+            // System.out.println("groupMappings.get(key) - key=" + key);
+
+            Map<String, Long> groupLines = OPEN_SOURCE_NAMES.contains(toPkgName(key)) ? groupLinesExternal : groupLinesInternal;
             Long groupLine = groupLines.get(groupKey);
             Long groupBehaviour = groupBehaviours.get(groupKey);
             if (groupLine == null) {
@@ -148,25 +180,28 @@ public class ContainsOSS {
             groupBehaviours.put(groupKey, groupBehaviour);
         }
 
-
+        Map<String, Long>[] groupings = new Map[]{groupLinesInternal, groupLinesExternal};
         Set<String> zeroes = new HashSet<>();
-        for (Map.Entry<String, Long> groupLineEntry : groupLines.entrySet()) {
-            String key = groupLineEntry.getKey();
-            Long count = groupLineEntry.getValue();
-            if (count != null && count == 0) {
-                Long behaviourCount = groupBehaviours.get(key);
-                count = calculateBehaviourHeuristic(count, behaviourCount);
-                groupLineEntry.setValue(count);
+        for (Map<String, Long> groupLines : groupings) {
+            for (Map.Entry<String, Long> groupLineEntry : groupLines.entrySet()) {
+                String key = groupLineEntry.getKey();
+                Long count = groupLineEntry.getValue();
+                if (count != null && count == 0) {
+                    Long behaviourCount = groupBehaviours.get(key);
+                    count = calculateBehaviourHeuristic(count, behaviourCount);
+                    groupLineEntry.setValue(count);
+                }
+                if (count == null || count == 0) {
+                    zeroes.add(key);
+                }
             }
-            if (count == null || count == 0) {
-                zeroes.add(key);
-            }
+            groupLines.keySet().removeAll(zeroes);
         }
-        groupLines.keySet().removeAll(zeroes);
 
         lineTotal = calculateBehaviourHeuristic(lineTotal, behaviourTotal);
         results.put(path, lineTotal);
-        results.put(path + ".SUBS", groupLines);
+        results.put(path + ".INTERNAL", groupLinesInternal);
+        results.put(path + ".EXTERNAL", groupLinesExternal);
         HASHES.put(path, crc64);
     }
 
@@ -246,6 +281,28 @@ public class ContainsOSS {
     }
 
     public static void main(String[] args) throws Exception {
+        {
+            File f = new File("names.uniq");
+            if (f.exists() && f.canRead()) {
+                FileInputStream fin = new FileInputStream(f);
+                InputStreamReader isr = new InputStreamReader(fin, StandardCharsets.UTF_8);
+                BufferedReader br = new BufferedReader(isr);
+                String line;
+                while ((line = br.readLine()) != null) {
+                    int x = line.lastIndexOf('.');
+                    if (x >= 0) {
+                        String name = line.trim();
+                        OPEN_SOURCE_NAMES.add(toPkgName(name));
+                        // System.out.println("Added... [" + name + "]");
+                    }
+                }
+                br.close();
+                isr.close();
+                fin.close();
+                System.err.println(" -- Defined " + OPEN_SOURCE_NAMES.size() + " open-source package names from 'names.uniq' file");
+            }
+        }
+
         List<String> argsList = new ArrayList(Arrays.asList(args));
         Iterator it = argsList.iterator();
 
@@ -310,6 +367,9 @@ public class ContainsOSS {
         for (Map<String, Object> m : list) {
             for (Map.Entry<String, Object> entry : m.entrySet()) {
                 String key = entry.getKey();
+
+                // System.out.println("KEY = [" + key + "]");
+
                 Long crc64 = HASHES.get(key);
                 if (seenHashes.contains(crc64)) {
                     DUPLICATES.add(key);
@@ -340,10 +400,17 @@ public class ContainsOSS {
                     } else {
                         long val = (Long) entry.getValue();
                         double ratio = 100.0D * ((double) val * 1.0D / (double) total);
-                        subMap.put("percentage", Double.parseDouble(formatter.format(ratio)));
+                        if (total > 0) {
+                            subMap.put("percentage", Double.parseDouble(formatter.format(ratio)));
+                        } else {
+                            subMap.put("percentage", -1.0);
+                        }
                         subMap.put("lines", val);
-                        Map subs = (Map) m.get(key + ".SUBS");
-                        subMap.put("breakdown", subs);
+                        Map subs = (Map) m.get(key + ".INTERNAL");
+                        subMap.put("breakdown.internal", subs);
+
+                        subs = (Map) m.get(key + ".EXTERNAL");
+                        subMap.put("breakdown.external", subs);
                     }
                     result.put(key, subMap);
                 }

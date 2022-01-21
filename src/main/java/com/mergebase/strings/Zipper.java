@@ -1,13 +1,12 @@
 package com.mergebase.strings;
 
-import java.util.jar.JarInputStream;
-
+import java.util.zip.ZipInputStream;
 
 /**
  * An interface that allows us to re-read a ZipInputStream as many times as we want.
  */
 public interface Zipper {
-    JarInputStream getFreshZipStream();
+    ZipInputStream getFreshZipStream();
 
     void close();
 

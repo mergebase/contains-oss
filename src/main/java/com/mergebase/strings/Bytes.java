@@ -1,9 +1,11 @@
 package com.mergebase.strings;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 public class Bytes {
@@ -11,23 +13,13 @@ public class Bytes {
     public static final int SIZE_KEY = 0;
     public static final int LAST_READ_KEY = 1;
 
-    public static byte[] fileToAtMost32KB(File f) {
-        FileInputStream fin;
+    public static final Charset UTF_8;
+
+    static {
         try {
-            fin = new FileInputStream(f);
-            if (f.length() <= 32768) {
-                try {
-                    byte[] buf = new byte[(int) f.length()];
-                    fill(buf, 0, fin);
-                    return buf;
-                } finally {
-                    fin.close();
-                }
-            } else {
-                return streamToBytes(fin, true, false);
-            }
-        } catch (IOException ioe) {
-            throw new RuntimeException("Failed to read file [" + f.getName() + "] " + ioe, ioe);
+            UTF_8 = Charset.forName("UTF-8");
+        } catch (Exception e) {
+            throw new RuntimeException("could not obtain UTF-8 charset...", e);
         }
     }
 
@@ -51,28 +43,31 @@ public class Bytes {
         }
     }
 
-    public static String fileToString(File f) throws IOException {
-        byte[] bytes = fileToBytes(f);
-        return new String(bytes, StandardCharsets.UTF_8);
+    public static byte[] fromString(String s) {
+        return s.getBytes(UTF_8);
     }
 
     public static byte[] streamToBytes(final InputStream in) throws IOException {
-        return streamToBytes(in, true);
-    }
-
-    public static String streamToString(final InputStream in) throws IOException {
-        byte[] bytes = streamToBytes(in, true);
-        return new String(bytes, StandardCharsets.UTF_8);
+        return streamToBytes(in, true, -1);
     }
 
     public static byte[] streamToBytes(final InputStream in, final boolean doClose) throws IOException {
-        return streamToBytes(in, doClose, true);
+        return streamToBytes(in, doClose, true, -1);
+    }
+
+    public static byte[] streamToBytes(final InputStream in, final boolean doClose, final long lengthHint) throws IOException {
+        return streamToBytes(in, doClose, true, lengthHint);
     }
 
     public static byte[] streamToBytes(
-            final InputStream in, final boolean doClose, final boolean doResize
+            final InputStream in, final boolean doClose, final boolean doResize, long lengthHint
     ) throws IOException {
-        byte[] buf = new byte[32768];
+        byte[] buf;
+        if (lengthHint > 0) {
+            buf = new byte[(int) lengthHint];
+        } else {
+            buf = new byte[32768];
+        }
         try {
             int[] status = fill(buf, 0, in);
             int size = status[SIZE_KEY];
@@ -112,6 +107,20 @@ public class Bytes {
                 read += lastRead;
             }
         }
+
+        if (lastRead != -1 && read + offset == buf.length) {
+            if (in.markSupported()) {
+                in.mark(1);
+                int peek = in.read();
+                if (peek == -1) {
+                    lastRead = -1;
+                } else {
+                    in.reset();
+                }
+            }
+        }
+
+        // If read + offset == buf.length, we are done!
         return new int[]{offset + read, lastRead};
     }
 
@@ -129,7 +138,9 @@ public class Bytes {
      * @return index of match or -1 if no match
      */
     public static int kmp(byte[] data, byte[] pattern) {
-        if (data.length == 0) return -1;
+        if (data.length == 0) {
+            return -1;
+        }
 
         int[] failure = kmpFailure(pattern);
         int j = 0;
@@ -165,4 +176,11 @@ public class Bytes {
         return failure;
     }
 
+    public static void disabledMain(String[] args) throws Exception {
+        String abc = "abc";
+        byte[] bytes = abc.getBytes(UTF_8);
+        ByteArrayInputStream bin = new ByteArrayInputStream(bytes);
+        byte[] result = Bytes.streamToBytes(bin, false, 2);
+        System.out.println("AFTER = [" + new String(result, UTF_8) + "]");
+    }
 }
