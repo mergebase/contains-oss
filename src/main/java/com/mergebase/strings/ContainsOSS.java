@@ -6,6 +6,7 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -26,6 +27,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.jar.JarInputStream;
+import java.util.zip.GZIPInputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -282,10 +284,22 @@ public class ContainsOSS {
 
     public static void main(String[] args) throws Exception {
         {
+            boolean isGz = false;
             File f = new File("names.uniq");
+            File g = new File("names.uniq.gz");
+            if (g.exists() && g.canRead()) {
+                f = g;
+                isGz = true;
+            }
             if (f.exists() && f.canRead()) {
-                FileInputStream fin = new FileInputStream(f);
-                InputStreamReader isr = new InputStreamReader(fin, StandardCharsets.UTF_8);
+                InputStream in = new FileInputStream(f);
+                final InputStream inOrig = in;
+                GZIPInputStream gzin;
+                if (isGz) {
+                    gzin = new GZIPInputStream(in);
+                    in = gzin;
+                }
+                InputStreamReader isr = new InputStreamReader(in, StandardCharsets.UTF_8);
                 BufferedReader br = new BufferedReader(isr);
                 String line;
                 while ((line = br.readLine()) != null) {
@@ -298,8 +312,15 @@ public class ContainsOSS {
                 }
                 br.close();
                 isr.close();
-                fin.close();
-                System.err.println(" -- Defined " + OPEN_SOURCE_NAMES.size() + " open-source package names from 'names.uniq' file");
+                in.close();
+                if (isGz) {
+                    inOrig.close();
+                }
+                String uniq = "names.uniq";
+                if (isGz) {
+                    uniq = "names.uniq.gz";
+                }
+                System.err.println(" -- Defined " + OPEN_SOURCE_NAMES.size() + " open-source package names from '" + uniq + "' file");
             }
         }
 
