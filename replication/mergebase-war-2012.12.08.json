@@ -1,0 +1,1055 @@
+{
+"totalLines":3459045,
+"args":["war-1.0-SNAPSHOT\/"],
+
+  
+"**\/*.class":{
+  "percentage":0.88,
+  "lines":30431,
+  "breakdown.internal":{
+    "com.mergebase.admin.accuracy":2173,
+    "com.mergebase.admin.model":170,
+    "com.mergebase.admin.rest":499,
+    "com.mergebase.admin.service":519,
+    "com.mergebase.admin.ui":726,
+    "com.mergebase.model.admin":69,
+    "com.mergebase.model.api":32,
+    "com.mergebase.model.common":281,
+    "com.mergebase.model.comp":1415,
+    "com.mergebase.model.cust":1287,
+    "com.mergebase.model.dash":6327,
+    "com.mergebase.model.external":763,
+    "com.mergebase.model.guide":309,
+    "com.mergebase.model.report":334,
+    "com.mergebase.model.vuln":1068,
+    "com.mergebase.producer":349,
+    "com.mergebase.rest":2169,
+    "com.mergebase.rest.auth":402,
+    "com.mergebase.rest.intel":495,
+    "com.mergebase.security":368,
+    "com.mergebase.service":6983,
+    "com.mergebase.service.s1":2304,
+    "com.mergebase.service.tracker":721,
+    "com.mergebase.store":67,
+    "com.mergebase.ui":304,
+    "com.mergebase.util":297
+  },
+  "breakdown.external":{}
+},
+  
+"war-1.0-SNAPSHOT\/META-INF\/mergebase.jar!\/**\/*.class":{
+  "crc64":7463492620894205973,
+  "percentage":0.27,
+  "lines":9316,
+  "breakdown.internal":{
+    "clt.shaded.com.mergebase":7675,
+    "com.mergebase.clt":303
+  },
+  "breakdown.external":{
+    "org.slf4j":524,
+    "org.slf4j.helpers":672,
+    "org.slf4j.impl":142,
+    "org.slf4j.spi":100
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/annotations-13.0.jar!\/**\/*.class":{
+  "crc64":6558504481256365917,
+  "percentage":0.0,
+  "lines":93,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.intellij.lang.annotations":93,
+    "org.jetbrains.annotations":85
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-codedeploy-1.12.20.jar!\/**\/*.class":{
+  "crc64":4183882487038038968,
+  "percentage":2.45,
+  "lines":84620,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.services.codedeploy":84620
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-cognitoidp-1.12.20.jar!\/**\/*.class":{
+  "crc64":9205831520141736218,
+  "percentage":3.97,
+  "lines":137328,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.services.cognitoidp":137328
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-core-1.12.20.jar!\/**\/*.class":{
+  "crc64":8982585646303382993,
+  "percentage":1.61,
+  "lines":55585,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws":6495,
+    "com.amazonaws.adapters.types":67,
+    "com.amazonaws.annotation":17,
+    "com.amazonaws.arn":374,
+    "com.amazonaws.auth":3953,
+    "com.amazonaws.auth.internal":335,
+    "com.amazonaws.auth.policy":2682,
+    "com.amazonaws.auth.presign":153,
+    "com.amazonaws.auth.profile":2195,
+    "com.amazonaws.cache":85,
+    "com.amazonaws.client":493,
+    "com.amazonaws.client.builder":677,
+    "com.amazonaws.endpointdiscovery":498,
+    "com.amazonaws.event":1161,
+    "com.amazonaws.event.request":185,
+    "com.amazonaws.handlers":766,
+    "com.amazonaws.http":2615,
+    "com.amazonaws.http.apache":1146,
+    "com.amazonaws.http.client":34,
+    "com.amazonaws.http.conn":726,
+    "com.amazonaws.http.exception":36,
+    "com.amazonaws.http.impl":76,
+    "com.amazonaws.http.protocol":85,
+    "com.amazonaws.http.request":17,
+    "com.amazonaws.http.response":184,
+    "com.amazonaws.http.settings":192,
+    "com.amazonaws.http.timers":669,
+    "com.amazonaws.internal":3517,
+    "com.amazonaws.internal.auth":188,
+    "com.amazonaws.internal.config":817,
+    "com.amazonaws.internal.http":284,
+    "com.amazonaws.jmx":244,
+    "com.amazonaws.jmx.spi":112,
+    "com.amazonaws.log":512,
+    "com.amazonaws.metrics":1585,
+    "com.amazonaws.metrics.internal":52,
+    "com.amazonaws.monitoring":1208,
+    "com.amazonaws.monitoring.internal":609,
+    "com.amazonaws.partitions":488,
+    "com.amazonaws.partitions.model":625,
+    "com.amazonaws.profile.path":332,
+    "com.amazonaws.protocol":407,
+    "com.amazonaws.protocol.json":3075,
+    "com.amazonaws.regions":2012,
+    "com.amazonaws.retry":1039,
+    "com.amazonaws.retry.internal":328,
+    "com.amazonaws.retry.v2":407,
+    "com.amazonaws.transform":1819,
+    "com.amazonaws.util":8845,
+    "com.amazonaws.util.endpoint":28,
+    "com.amazonaws.util.json":140,
+    "com.amazonaws.waiters":1149
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-ec2-1.12.20.jar!\/**\/*.class":{
+  "crc64":2232641035494690075,
+  "percentage":19.82,
+  "lines":685665,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.auth.policy":444,
+    "com.amazonaws.services.ec2":685221
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-elasticloadbalancingv2-1.12.20.jar!\/**\/*.class":{
+  "crc64":8357041115425936311,
+  "percentage":1.52,
+  "lines":52728,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.services.elasticloadbalancingv2":52728
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-kms-1.12.20.jar!\/**\/*.class":{
+  "crc64":2044952337196674544,
+  "percentage":1.97,
+  "lines":68082,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.auth.policy":128,
+    "com.amazonaws.services.kms":67954
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-rdsdata-1.12.20.jar!\/**\/*.class":{
+  "crc64":5883734023851213805,
+  "percentage":0.38,
+  "lines":13292,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.services.rdsdata":13292
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-route53-1.12.20.jar!\/**\/*.class":{
+  "crc64":8018600740020220335,
+  "percentage":3.78,
+  "lines":130812,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.auth.policy":170,
+    "com.amazonaws.services.route53":89902,
+    "com.amazonaws.services.route53domains":40740
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/aws-java-sdk-s3-1.12.20.jar!\/**\/*.class":{
+  "crc64":879752093173081285,
+  "percentage":3.01,
+  "lines":104052,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.auth":487,
+    "com.amazonaws.auth.policy":709,
+    "com.amazonaws.services.s3":102856
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/bcrypt-0.6.0.jar!\/**\/*.class":{
+  "crc64":5245195663746529839,
+  "percentage":0.02,
+  "lines":655,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "at.favre.lib.crypto":655
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/bytes-0.8.0.jar!\/**\/*.class":{
+  "crc64":6454395930823984880,
+  "percentage":0.1,
+  "lines":3476,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "at.favre.lib.bytes":3476
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/checker-qual-3.5.0.jar!\/**\/*.class":{
+  "crc64":1486020896748773059,
+  "percentage":0.07,
+  "lines":2301,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.checkerframework.checker.fenum":17,
+    "org.checkerframework.checker.formatter":433,
+    "org.checkerframework.checker.i18nformatter":278,
+    "org.checkerframework.checker.index":400,
+    "org.checkerframework.checker.initialization":34,
+    "org.checkerframework.checker.lock":100,
+    "org.checkerframework.checker.nullness":299,
+    "org.checkerframework.checker.regex":334,
+    "org.checkerframework.checker.signedness":519,
+    "org.checkerframework.checker.units":210,
+    "org.checkerframework.common.reflection":85,
+    "org.checkerframework.common.value":200,
+    "org.checkerframework.framework.qual":228
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/commons-codec-1.15.jar!\/**\/*.class":{
+  "crc64":4593953702620654676,
+  "percentage":0.59,
+  "lines":20477,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.codec":20477
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/commons-lang3-3.11.jar!\/**\/*.class":{
+  "crc64":1005978082844885880,
+  "percentage":2.37,
+  "lines":81974,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.lang3":81974
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/commons-logging-1.1.3.jar!\/**\/*.class":{
+  "crc64":3169594935675548227,
+  "percentage":0.18,
+  "lines":6102,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.logging":6102
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/error_prone_annotations-2.3.4.jar!\/**\/*.class":{
+  "crc64":4609298956266702498,
+  "percentage":0.01,
+  "lines":200,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.errorprone.annotations":200
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/failureaccess-1.0.1.jar!\/**\/*.class":{
+  "crc64":0,
+  "percentage":0.0,
+  "lines":75,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.common.util":75
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/google-api-client-1.30.4.jar!\/**\/*.class":{
+  "crc64":3683488547626722383,
+  "percentage":0.28,
+  "lines":9701,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.api.client":9701
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/google-api-services-sheets-v4-rev612-1.25.0.jar!\/**\/*.class":{
+  "crc64":3836375839826562428,
+  "percentage":0.84,
+  "lines":29100,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.api.services":29100
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/google-http-client-1.32.1.jar!\/**\/*.class":{
+  "crc64":5854843256070216037,
+  "percentage":0.59,
+  "lines":20417,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.api.client":20417
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/google-http-client-jackson2-1.32.1.jar!\/**\/*.class":{
+  "crc64":6317197220677245314,
+  "percentage":0.01,
+  "lines":372,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.api.client":372
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/google-oauth-client-1.30.3.jar!\/**\/*.class":{
+  "crc64":436886713097091135,
+  "percentage":0.14,
+  "lines":4798,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.api.client":4798
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/google-oauth-client-java6-1.30.6.jar!\/**\/*.class":{
+  "crc64":5739541211240477113,
+  "percentage":0.02,
+  "lines":630,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.api.client":630
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/google-oauth-client-jetty-1.30.6.jar!\/**\/*.class":{
+  "crc64":8737624503660513115,
+  "percentage":0.01,
+  "lines":217,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.api.client":217
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/grpc-context-1.22.1.jar!\/**\/*.class":{
+  "crc64":2211230490138457964,
+  "percentage":0.04,
+  "lines":1397,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "io.grpc":1397
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/guava-30.0-jre.jar!\/**\/*.class":{
+  "crc64":5336824570668147341,
+  "percentage":4.36,
+  "lines":150951,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.common.annotations":51,
+    "com.google.common.base":11878,
+    "com.google.common.cache":7676,
+    "com.google.common.collect":67606,
+    "com.google.common.escape":1357,
+    "com.google.common.eventbus":855,
+    "com.google.common.graph":6347,
+    "com.google.common.hash":4912,
+    "com.google.common.html":68,
+    "com.google.common.io":7828,
+    "com.google.common.math":6034,
+    "com.google.common.net":3865,
+    "com.google.common.primitives":9123,
+    "com.google.common.reflect":4032,
+    "com.google.common.util":18998,
+    "com.google.common.xml":144,
+    "com.google.thirdparty.publicsuffix":228
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/http-20070405.jar!\/**\/*.class":{
+  "crc64":3225242612296006842,
+  "percentage":0.15,
+  "lines":5325,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.net.httpserver":1389,
+    "sun.net.httpserver":3936
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/httpclient-4.5.13.jar!\/**\/*.class":{
+  "crc64":1398161413889771481,
+  "percentage":1.46,
+  "lines":50650,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.http.auth":1797,
+    "org.apache.http.client":8442,
+    "org.apache.http.conn":6934,
+    "org.apache.http.cookie":659,
+    "org.apache.http.impl":32818
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/httpcore-4.4.13.jar!\/**\/*.class":{
+  "crc64":2269972958853924387,
+  "percentage":0.76,
+  "lines":26438,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.http":1522,
+    "org.apache.http.annotation":61,
+    "org.apache.http.concurrent":160,
+    "org.apache.http.config":546,
+    "org.apache.http.entity":1855,
+    "org.apache.http.impl":9240,
+    "org.apache.http.io":400,
+    "org.apache.http.message":4382,
+    "org.apache.http.params":1309,
+    "org.apache.http.pool":1174,
+    "org.apache.http.protocol":3332,
+    "org.apache.http.ssl":699,
+    "org.apache.http.util":2158
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/inoculator-1.0-SNAPSHOT.jar!\/**\/*.class":{
+  "crc64":1914329552473248496,
+  "percentage":26.4,
+  "lines":913173,
+  "breakdown.internal":{
+    "com.mergebase":423,
+    "com.mergebase.diff":144,
+    "com.mergebase.filescanner":1697,
+    "com.mergebase.filescanner.ScanResult":208,
+    "com.mergebase.filescanner.c":755,
+    "com.mergebase.filescanner.graph":1816,
+    "com.mergebase.filescanner.model":593,
+    "com.mergebase.filescanner.parsers":5977,
+    "com.mergebase.inoculator":889,
+    "com.mergebase.model":2256,
+    "com.mergebase.process":2773,
+    "com.mergebase.report":526,
+    "com.mergebase.scan":1243,
+    "com.mergebase.service":87,
+    "com.mergebase.sig":3801,
+    "com.mergebase.util":8878,
+    "mergebase":1770,
+    "org.gradle.internal.deprecation":683,
+    "org.gradle.internal.featurelifecycle":342
+  },
+  "breakdown.external":{
+    "com.fasterxml.jackson.annotation":315,
+    "com.fasterxml.jackson.core":41235,
+    "com.fasterxml.jackson.databind":94214,
+    "com.fasterxml.jackson.module":2075,
+    "com.jcraft.jsch":18091,
+    "com.jcraft.jsch.jce":2710,
+    "com.jcraft.jsch.jcraft":439,
+    "com.jcraft.jsch.jgss":176,
+    "com.sun.activation.registries":1570,
+    "com.sun.activation.viewers":527,
+    "javassist":14079,
+    "javassist.bytecode":55593,
+    "javassist.bytecode.analysis":3515,
+    "javassist.bytecode.annotation":2811,
+    "javassist.bytecode.stackmap":2517,
+    "javassist.compiler":9051,
+    "javassist.compiler.ast":1543,
+    "javassist.convert":1096,
+    "javassist.expr":2187,
+    "javassist.runtime":292,
+    "javassist.scopedpool":829,
+    "javassist.tools":259,
+    "javassist.tools.reflect":1555,
+    "javassist.tools.rmi":1216,
+    "javassist.tools.web":1065,
+    "javassist.util":524,
+    "javassist.util.proxy":3216,
+    "javax.activation":6226,
+    "javax.annotation":200,
+    "javax.annotation.security":51,
+    "javax.annotation.sql":300,
+    "javax.inject":34,
+    "javax.json":2927,
+    "javax.json.bind":678,
+    "javax.json.bind.adapter":34,
+    "javax.json.bind.annotation":200,
+    "javax.json.bind.config":110,
+    "javax.json.bind.serializer":100,
+    "javax.json.bind.spi":161,
+    "javax.json.spi":502,
+    "javax.json.stream":850,
+    "javax.ws.rs":2282,
+    "javax.ws.rs.client":784,
+    "javax.ws.rs.container":1000,
+    "javax.ws.rs.core":4445,
+    "javax.ws.rs.ext":421,
+    "javax.ws.rs.sse":498,
+    "javax.xml.bind":5858,
+    "javax.xml.bind.annotation":832,
+    "javax.xml.bind.attachment":349,
+    "javax.xml.bind.helpers":1931,
+    "javax.xml.bind.util":649,
+    "jersey.repackaged.com.google":58000,
+    "org.aopalliance.aop":73,
+    "org.aopalliance.instrument":36,
+    "org.aopalliance.intercept":200,
+    "org.aopalliance.reflect":500,
+    "org.apache.commons.codec":19065,
+    "org.apache.commons.compress":74669,
+    "org.apache.commons.csv":5378,
+    "org.apache.commons.lang3":75052,
+    "org.apache.maven.model":24149,
+    "org.codehaus.plexus.util":29619,
+    "org.eclipse.yasson":192,
+    "org.eclipse.yasson.internal":18712,
+    "org.eclipse.yasson.spi":46,
+    "org.glassfish.hk2.api":1273,
+    "org.glassfish.hk2.extension":17,
+    "org.glassfish.hk2.internal":1948,
+    "org.glassfish.hk2.osgiresourcelocator":628,
+    "org.glassfish.hk2.utilities":12815,
+    "org.glassfish.jersey":1698,
+    "org.glassfish.jersey.client":11904,
+    "org.glassfish.jersey.filter":317,
+    "org.glassfish.jersey.inject":2107,
+    "org.glassfish.jersey.internal":34292,
+    "org.glassfish.jersey.jackson":2982,
+    "org.glassfish.jersey.logging":830,
+    "org.glassfish.jersey.message":15464,
+    "org.glassfish.jersey.model":3219,
+    "org.glassfish.jersey.process":999,
+    "org.glassfish.jersey.spi":831,
+    "org.glassfish.jersey.uri":4485,
+    "org.glassfish.json":6326,
+    "org.glassfish.json.api":34,
+    "org.gradle":986,
+    "org.gradle.api":420,
+    "org.gradle.api.artifacts":41,
+    "org.gradle.api.internal":895,
+    "org.gradle.api.logging":156,
+    "org.gradle.api.reflect":30,
+    "org.gradle.api.resources":102,
+    "org.gradle.api.specs":36,
+    "org.gradle.cache":17,
+    "org.gradle.cli":585,
+    "org.gradle.concurrent":68,
+    "org.gradle.initialization":488,
+    "org.gradle.initialization.layout":204,
+    "org.gradle.internal":1138,
+    "org.gradle.internal.buildoption":746,
+    "org.gradle.internal.classloader":708,
+    "org.gradle.internal.classpath":212,
+    "org.gradle.internal.concurrent":691,
+    "org.gradle.internal.dispatch":167,
+    "org.gradle.internal.event":521,
+    "org.gradle.internal.exceptions":161,
+    "org.gradle.internal.impldep":97661,
+    "org.gradle.internal.installation":205,
+    "org.gradle.internal.io":555,
+    "org.gradle.internal.logging":561,
+    "org.gradle.internal.operations":630,
+    "org.gradle.internal.reflect":360,
+    "org.gradle.internal.scripts":115,
+    "org.gradle.internal.service":2045,
+    "org.gradle.internal.time":400,
+    "org.gradle.internal.util":118,
+    "org.gradle.scripts":34,
+    "org.gradle.tooling":345,
+    "org.gradle.tooling.events":2079,
+    "org.gradle.tooling.exceptions":68,
+    "org.gradle.tooling.internal":7186,
+    "org.gradle.tooling.model":213,
+    "org.gradle.util":1572,
+    "org.gradle.wrapper":1004,
+    "org.jvnet.hk2.annotations":85,
+    "org.jvnet.hk2.component":359,
+    "org.jvnet.hk2.external":157,
+    "org.jvnet.hk2.internal":11062,
+    "org.jvnet.tiger_types":1047,
+    "org.objectweb.asm":16610,
+    "org.objectweb.asm.signature":690,
+    "org.slf4j":819,
+    "org.slf4j.event":449,
+    "org.slf4j.helpers":2053,
+    "org.slf4j.impl":1135,
+    "org.slf4j.spi":100,
+    "org.tukaani.xz":7000,
+    "org.tukaani.xz.check":300,
+    "org.tukaani.xz.common":200,
+    "org.tukaani.xz.delta":85,
+    "org.tukaani.xz.index":500,
+    "org.tukaani.xz.lz":1000,
+    "org.tukaani.xz.lzma":1000,
+    "org.tukaani.xz.rangecoder":600,
+    "org.tukaani.xz.simple":200,
+    "org.yaml.snakeyaml":1742,
+    "org.yaml.snakeyaml.comments":265,
+    "org.yaml.snakeyaml.composer":340,
+    "org.yaml.snakeyaml.constructor":1800,
+    "org.yaml.snakeyaml.emitter":1767,
+    "org.yaml.snakeyaml.env":97,
+    "org.yaml.snakeyaml.error":319,
+    "org.yaml.snakeyaml.events":895,
+    "org.yaml.snakeyaml.extensions":314,
+    "org.yaml.snakeyaml.external":1081,
+    "org.yaml.snakeyaml.introspector":928,
+    "org.yaml.snakeyaml.nodes":927,
+    "org.yaml.snakeyaml.parser":997,
+    "org.yaml.snakeyaml.reader":408,
+    "org.yaml.snakeyaml.representer":933,
+    "org.yaml.snakeyaml.resolver":176,
+    "org.yaml.snakeyaml.scanner":2583,
+    "org.yaml.snakeyaml.serializer":288,
+    "org.yaml.snakeyaml.tokens":806,
+    "org.yaml.snakeyaml.util":223,
+    "org.zeroturnaround.exec":2158,
+    "org.zeroturnaround.exec.close":231,
+    "org.zeroturnaround.exec.listener":484,
+    "org.zeroturnaround.exec.stop":64,
+    "org.zeroturnaround.exec.stream":1389
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/ion-java-1.0.2.jar!\/**\/*.class":{
+  "crc64":6654118898977998365,
+  "percentage":1.28,
+  "lines":44166,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "software.amazon.ion":3631,
+    "software.amazon.ion.apps":671,
+    "software.amazon.ion.facet":189,
+    "software.amazon.ion.impl":35722,
+    "software.amazon.ion.system":1696,
+    "software.amazon.ion.util":2257
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/j2objc-annotations-1.3.jar!\/**\/*.class":{
+  "crc64":3077680943380649949,
+  "percentage":0.0,
+  "lines":68,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.j2objc.annotations":68
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/jackson-annotations-2.11.0.jar!\/**\/*.class":{
+  "crc64":9179282862349850395,
+  "percentage":0.01,
+  "lines":315,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.fasterxml.jackson.annotation":315
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/jackson-core-2.11.0.jar!\/**\/*.class":{
+  "crc64":290328294770729432,
+  "percentage":1.28,
+  "lines":44155,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.fasterxml.jackson.core":44155
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/jackson-databind-2.11.0.jar!\/**\/*.class":{
+  "crc64":8791222318550527877,
+  "percentage":2.89,
+  "lines":99883,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.fasterxml.jackson.databind":99883
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/jackson-dataformat-cbor-2.12.3.jar!\/**\/*.class":{
+  "crc64":6848950968887504211,
+  "percentage":0.2,
+  "lines":6831,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.fasterxml.jackson.dataformat":6831
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/java-jwt-3.15.0.jar!\/**\/*.class":{
+  "crc64":6923830382695607208,
+  "percentage":0.09,
+  "lines":3054,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.auth0.jwt":1190,
+    "com.auth0.jwt.algorithms":1044,
+    "com.auth0.jwt.exceptions":68,
+    "com.auth0.jwt.impl":696,
+    "com.auth0.jwt.interfaces":56
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/java-saml-2.6.0.jar!\/**\/*.class":{
+  "crc64":5262720033209073373,
+  "percentage":0.04,
+  "lines":1374,
+  "breakdown.internal":{
+    "com.onelogin.saml2":1158,
+    "com.onelogin.saml2.servlet":216
+  },
+  "breakdown.external":{}
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/java-saml-core-2.6.0.jar!\/**\/*.class":{
+  "crc64":8620485013547023901,
+  "percentage":0.24,
+  "lines":8278,
+  "breakdown.internal":{
+    "com.onelogin.saml2.authn":1491,
+    "com.onelogin.saml2.exception":161,
+    "com.onelogin.saml2.http":217,
+    "com.onelogin.saml2.logout":1232,
+    "com.onelogin.saml2.model":555,
+    "com.onelogin.saml2.settings":2556,
+    "com.onelogin.saml2.util":2066
+  },
+  "breakdown.external":{}
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/jmespath-java-1.12.20.jar!\/**\/*.class":{
+  "crc64":784648382166599060,
+  "percentage":0.05,
+  "lines":1838,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.amazonaws.jmespath":1838
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/joda-time-2.10.6.jar!\/**\/*.class":{
+  "crc64":7926097564143296794,
+  "percentage":1.68,
+  "lines":58089,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.joda.time":26872,
+    "org.joda.time.base":4340,
+    "org.joda.time.chrono":7892,
+    "org.joda.time.convert":2180,
+    "org.joda.time.field":6024,
+    "org.joda.time.format":8903,
+    "org.joda.time.tz":1878
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/json-20210307.jar!\/**\/*.class":{
+  "crc64":4929800302336945067,
+  "percentage":0.25,
+  "lines":8762,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.json":8762
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/jsr305-3.0.2.jar!\/**\/*.class":{
+  "crc64":7850676173220989655,
+  "percentage":0.0,
+  "lines":21,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.annotation":100,
+    "javax.annotation.concurrent":17,
+    "javax.annotation.meta":21
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/jwks-rsa-0.17.0.jar!\/**\/*.class":{
+  "crc64":8862648460273680096,
+  "percentage":0.02,
+  "lines":849,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.auth0.jwk":849
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/kotlin-stdlib-1.4.10.jar!\/**\/*.class":{
+  "crc64":2515762139465980576,
+  "percentage":3.0,
+  "lines":103718,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "kotlin":6978,
+    "kotlin.annotation":87,
+    "kotlin.collections":39034,
+    "kotlin.collections.builders":2852,
+    "kotlin.collections.unsigned":11227,
+    "kotlin.comparisons":2316,
+    "kotlin.concurrent":285,
+    "kotlin.contracts":250,
+    "kotlin.coroutines":691,
+    "kotlin.coroutines.cancellation":26,
+    "kotlin.coroutines.intrinsics":335,
+    "kotlin.coroutines.jvm.internal":1251,
+    "kotlin.experimental":47,
+    "kotlin.internal":471,
+    "kotlin.io":3112,
+    "kotlin.jvm":124,
+    "kotlin.jvm.functions":400,
+    "kotlin.jvm.internal":4834,
+    "kotlin.jvm.internal.unsafe":12,
+    "kotlin.math":1335,
+    "kotlin.properties":162,
+    "kotlin.random":1230,
+    "kotlin.ranges":3322,
+    "kotlin.reflect":1206,
+    "kotlin.sequences":10634,
+    "kotlin.system":52,
+    "kotlin.text":10074,
+    "kotlin.time":1771
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/kotlin-stdlib-common-1.4.0.jar!\/**\/*.class":{
+  "crc64":5274260053811145729,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/log4j-api-2.13.2.jar!\/**\/*.class":{
+  "crc64":7085441782715822347,
+  "percentage":0.72,
+  "lines":25010,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.logging.log4j":25010
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/log4j-core-2.13.2.jar!\/**\/*.class":{
+  "crc64":6121396132891979721,
+  "percentage":2.52,
+  "lines":87053,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.logging.log4j":87053
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/okhttp-4.9.1.jar!\/**\/*.class":{
+  "crc64":1815572051916791301,
+  "percentage":0.71,
+  "lines":24713,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "okhttp3":8827,
+    "okhttp3.internal":922,
+    "okhttp3.internal.authenticator":91,
+    "okhttp3.internal.cache":1405,
+    "okhttp3.internal.cache2":369,
+    "okhttp3.internal.concurrent":741,
+    "okhttp3.internal.connection":2548,
+    "okhttp3.internal.http":1234,
+    "okhttp3.internal.http1":540,
+    "okhttp3.internal.http2":4078,
+    "okhttp3.internal.io":47,
+    "okhttp3.internal.platform":926,
+    "okhttp3.internal.platform.android":741,
+    "okhttp3.internal.proxy":37,
+    "okhttp3.internal.publicsuffix":247,
+    "okhttp3.internal.tls":412,
+    "okhttp3.internal.ws":1548
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/okio-2.8.0.jar!\/**\/*.class":{
+  "crc64":2065174741251866071,
+  "percentage":0.36,
+  "lines":12541,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "okio":9109,
+    "okio.internal":3432
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/opencensus-api-0.24.0.jar!\/**\/*.class":{
+  "crc64":7569565960895833393,
+  "percentage":0.49,
+  "lines":17060,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "io.opencensus.common":1168,
+    "io.opencensus.internal":377,
+    "io.opencensus.metrics":1800,
+    "io.opencensus.metrics.data":242,
+    "io.opencensus.metrics.export":1753,
+    "io.opencensus.resource":282,
+    "io.opencensus.stats":2628,
+    "io.opencensus.tags":1060,
+    "io.opencensus.tags.propagation":233,
+    "io.opencensus.tags.unsafe":73,
+    "io.opencensus.trace":4843,
+    "io.opencensus.trace.config":264,
+    "io.opencensus.trace.export":1429,
+    "io.opencensus.trace.internal":80,
+    "io.opencensus.trace.propagation":431,
+    "io.opencensus.trace.samplers":331,
+    "io.opencensus.trace.unsafe":66
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/opencensus-contrib-http-util-0.24.0.jar!\/**\/*.class":{
+  "crc64":5262828156046811987,
+  "percentage":0.04,
+  "lines":1459,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "io.opencensus.contrib.http":1459
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/postgresql-42.2.20.jar!\/**\/*.class":{
+  "crc64":7163522782003404614,
+  "percentage":1.91,
+  "lines":65942,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.postgresql":1682,
+    "org.postgresql.copy":604,
+    "org.postgresql.core":5719,
+    "org.postgresql.core.v3":5831,
+    "org.postgresql.ds":1072,
+    "org.postgresql.ds.common":1783,
+    "org.postgresql.fastpath":428,
+    "org.postgresql.geometric":1233,
+    "org.postgresql.gss":564,
+    "org.postgresql.hostchooser":338,
+    "org.postgresql.jdbc":21380,
+    "org.postgresql.jdbc2":28,
+    "org.postgresql.jdbc2.optional":42,
+    "org.postgresql.jdbc3":42,
+    "org.postgresql.jre7.sasl":197,
+    "org.postgresql.largeobject":1095,
+    "org.postgresql.osgi":204,
+    "org.postgresql.replication":260,
+    "org.postgresql.replication.fluent":459,
+    "org.postgresql.shaded.com":11121,
+    "org.postgresql.ssl":1351,
+    "org.postgresql.ssl.jdbc4":82,
+    "org.postgresql.sspi":317,
+    "org.postgresql.translation":4553,
+    "org.postgresql.util":4363,
+    "org.postgresql.util.internal":43,
+    "org.postgresql.xa":911,
+    "org.postgresql.xml":240
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/stax2-api-4.2.jar!\/**\/*.class":{
+  "crc64":2206951358058746463,
+  "percentage":0.44,
+  "lines":15364,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.codehaus.stax2":343,
+    "org.codehaus.stax2.evt":15,
+    "org.codehaus.stax2.io":647,
+    "org.codehaus.stax2.osgi":68,
+    "org.codehaus.stax2.ri":11972,
+    "org.codehaus.stax2.typed":560,
+    "org.codehaus.stax2.util":934,
+    "org.codehaus.stax2.validation":893
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/woodstox-core-5.2.1.jar!\/**\/*.class":{
+  "crc64":2417159989477791681,
+  "percentage":1.65,
+  "lines":57218,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.ctc.wstx.api":3268,
+    "com.ctc.wstx.cfg":191,
+    "com.ctc.wstx.compat":54,
+    "com.ctc.wstx.dom":1064,
+    "com.ctc.wstx.dtd":10454,
+    "com.ctc.wstx.ent":497,
+    "com.ctc.wstx.evt":1915,
+    "com.ctc.wstx.exc":336,
+    "com.ctc.wstx.io":6656,
+    "com.ctc.wstx.msv":1151,
+    "com.ctc.wstx.osgi":135,
+    "com.ctc.wstx.sax":1642,
+    "com.ctc.wstx.sr":12549,
+    "com.ctc.wstx.stax":1359,
+    "com.ctc.wstx.sw":10091,
+    "com.ctc.wstx.util":5856
+  }
+},
+  
+"war-1.0-SNAPSHOT\/WEB-INF\/lib\/xmlsec-2.2.0.jar!\/**\/*.class":{
+  "crc64":5758506534994483547,
+  "percentage":2.05,
+  "lines":70851,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.jcp.xml":8918,
+    "org.apache.xml.security":61933
+  }
+}
+
+}

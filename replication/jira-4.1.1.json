@@ -1,0 +1,3953 @@
+{
+"totalLines":6970788,
+"args":["2010-04-21.atlassian-jira-enterprise-4.1.1-standalone"],
+
+  
+"**\/*.class":{
+  "percentage":6.14,
+  "lines":427876,
+  "breakdown.internal":{
+    "com.atlassian.configurable":1135,
+    "com.atlassian.diff":546,
+    "com.atlassian.jira":4506,
+    "com.atlassian.jira.action":4619,
+    "com.atlassian.jira.admin":152,
+    "com.atlassian.jira.appconsistency":3573,
+    "com.atlassian.jira.avatar":727,
+    "com.atlassian.jira.bc":15356,
+    "com.atlassian.jira.bean":384,
+    "com.atlassian.jira.bulkedit":1998,
+    "com.atlassian.jira.cache":119,
+    "com.atlassian.jira.charts":4314,
+    "com.atlassian.jira.config":3755,
+    "com.atlassian.jira.configurableobjects":62,
+    "com.atlassian.jira.configurator":3436,
+    "com.atlassian.jira.dashboard":1008,
+    "com.atlassian.jira.event":2521,
+    "com.atlassian.jira.exception":298,
+    "com.atlassian.jira.extension":8,
+    "com.atlassian.jira.external":3289,
+    "com.atlassian.jira.favourites":664,
+    "com.atlassian.jira.image":188,
+    "com.atlassian.jira.imports":21537,
+    "com.atlassian.jira.index":1431,
+    "com.atlassian.jira.issue":82625,
+    "com.atlassian.jira.jelly":9088,
+    "com.atlassian.jira.jql":27252,
+    "com.atlassian.jira.license":1196,
+    "com.atlassian.jira.logging":359,
+    "com.atlassian.jira.mail":3445,
+    "com.atlassian.jira.movesubtask":212,
+    "com.atlassian.jira.notification":1694,
+    "com.atlassian.jira.ofbiz":2694,
+    "com.atlassian.jira.permission":1319,
+    "com.atlassian.jira.plugin":20349,
+    "com.atlassian.jira.portal":6505,
+    "com.atlassian.jira.project":3570,
+    "com.atlassian.jira.propertyset":1338,
+    "com.atlassian.jira.scheduler":450,
+    "com.atlassian.jira.scheme":3301,
+    "com.atlassian.jira.security":9089,
+    "com.atlassian.jira.service":5954,
+    "com.atlassian.jira.servlet":454,
+    "com.atlassian.jira.sharing":4481,
+    "com.atlassian.jira.soap":763,
+    "com.atlassian.jira.startup":2041,
+    "com.atlassian.jira.task":1732,
+    "com.atlassian.jira.template":393,
+    "com.atlassian.jira.trackback":533,
+    "com.atlassian.jira.upgrade":15017,
+    "com.atlassian.jira.user":4704,
+    "com.atlassian.jira.util":25920,
+    "com.atlassian.jira.vcs":2270,
+    "com.atlassian.jira.web":102294,
+    "com.atlassian.jira.webwork":1130,
+    "com.atlassian.jira.workflow":8210,
+    "com.atlassian.query":111,
+    "com.atlassian.query.clause":480,
+    "com.atlassian.query.operand":578,
+    "com.atlassian.query.operator":169,
+    "com.atlassian.query.order":263,
+    "com.atlassian.velocity":267
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/**\/*.class":{
+  "crc64":4301855837334634754,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-dashboard-plugin-1.1.5.1.jar":{
+  "crc64":4806082228830761660,
+  "percentage":0.06,
+  "lines":4446,
+  "breakdown.internal":{
+    "com.atlassian.gadgets.dashboard":3968,
+    "com.atlassian.gadgets.util":478
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-directory-plugin-1.1.5.1.jar":{
+  "crc64":4441379991044705325,
+  "percentage":0.03,
+  "lines":1903,
+  "breakdown.internal":{
+    "com.atlassian.gadgets.directory":1425,
+    "com.atlassian.gadgets.util":478
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-embedded-plugin-1.1.5.1.jar":{
+  "crc64":4315163187767172995,
+  "percentage":0.01,
+  "lines":731,
+  "breakdown.internal":{
+    "com.atlassian.gadgets.embedded":253,
+    "com.atlassian.gadgets.util":478
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-oauth-service-provider-plugin-1.1.5.1.jar":{
+  "crc64":2484960043594610186,
+  "percentage":0.0,
+  "lines":197,
+  "breakdown.internal":{
+    "com.atlassian.gadgets.oauth":197
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-publisher-plugin-1.1.5.1.jar":{
+  "crc64":2497950933734262260,
+  "percentage":0.02,
+  "lines":1470,
+  "breakdown.internal":{
+    "com.atlassian.gadgets.publisher":992,
+    "com.atlassian.gadgets.util":478
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar":{
+  "crc64":9134380726451606720,
+  "percentage":0.03,
+  "lines":2204,
+  "breakdown.internal":{
+    "com.atlassian.gadgets.renderer":2204
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar!\/atlassian-gadgets-shared-1.1.5.1.jar":{
+  "crc64":5652749407001846458,
+  "percentage":0.01,
+  "lines":478,
+  "breakdown.internal":{
+    "com.atlassian.gadgets.util":478
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar!\/atlassian-oauth-bridge-1.0.0.jar":{
+  "crc64":6958410616189669807,
+  "percentage":0.01,
+  "lines":486,
+  "breakdown.internal":{
+    "com.atlassian.oauth.bridge":486
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar!\/guice-1.0-atlassian-2.jar":{
+  "crc64":659691056851684846,
+  "percentage":0.26,
+  "lines":18404,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.inject":4681,
+    "com.google.inject.asm":5000,
+    "com.google.inject.binder":400,
+    "com.google.inject.cglib":11498,
+    "com.google.inject.jndi":43,
+    "com.google.inject.matcher":225,
+    "com.google.inject.name":134,
+    "com.google.inject.spi":176,
+    "com.google.inject.tools":150,
+    "com.google.inject.util":1497
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar!\/hamcrest-all-1.2.jar":{
+  "crc64":5684059374460370747,
+  "percentage":0.17,
+  "lines":11637,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.hamcrest":1468,
+    "org.hamcrest.beans":351,
+    "org.hamcrest.collection":841,
+    "org.hamcrest.core":1002,
+    "org.hamcrest.generator":942,
+    "org.hamcrest.generator.config":126,
+    "org.hamcrest.generator.qdox":6120,
+    "org.hamcrest.integration":78,
+    "org.hamcrest.internal":133,
+    "org.hamcrest.number":141,
+    "org.hamcrest.object":133,
+    "org.hamcrest.text":191,
+    "org.hamcrest.xml":111
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar!\/oauth-20090617.jar":{
+  "crc64":3974473780465536287,
+  "percentage":0.06,
+  "lines":4343,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "net.oauth":1417,
+    "net.oauth.client":505,
+    "net.oauth.http":356,
+    "net.oauth.signature":1503,
+    "net.oauth.signature.pem":562
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar!\/shindig-common-1.0-incubating-atlassian-10.jar":{
+  "crc64":8574915742217130474,
+  "percentage":0.09,
+  "lines":6337,
+  "breakdown.internal":{
+    "org.apache.shindig.auth":1298,
+    "org.apache.shindig.common":5039
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar!\/shindig-features-1.0-incubating-atlassian-10.jar":{
+  "crc64":6680670803511168613,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-gadgets-renderer-plugin-1.1.5.1.jar!\/shindig-gadgets-1.0-incubating-atlassian-10.jar":{
+  "crc64":7766169536284139949,
+  "percentage":0.27,
+  "lines":18720,
+  "breakdown.internal":{
+    "org.apache.shindig.gadgets":18720
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-oauth-admin-plugin-1.0.8.1.jar":{
+  "crc64":3025860099569523081,
+  "percentage":0.02,
+  "lines":1276,
+  "breakdown.internal":{
+    "com.atlassian.oauth.admin":1022,
+    "com.atlassian.oauth.shared":254
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-oauth-consumer-plugin-1.0.8.1.jar":{
+  "crc64":5207467077104396843,
+  "percentage":0.0,
+  "lines":306,
+  "breakdown.internal":{
+    "com.atlassian.oauth.consumer":52,
+    "com.atlassian.oauth.shared":254
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-oauth-consumer-spi-1.0.8.1.jar":{
+  "crc64":2616532724550745245,
+  "percentage":0.0,
+  "lines":126,
+  "breakdown.internal":{
+    "com.atlassian.oauth.consumer":126
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-oauth-service-provider-plugin-1.0.8.1.jar":{
+  "crc64":2800068655192254316,
+  "percentage":0.1,
+  "lines":7054,
+  "breakdown.internal":{
+    "com.atlassian.oauth.bridge":386,
+    "com.atlassian.oauth.serviceprovider":1826,
+    "com.atlassian.oauth.shared":254
+  },
+  "breakdown.external":{
+    "net.oauth":1417,
+    "net.oauth.client":505,
+    "net.oauth.http":356,
+    "net.oauth.server":245,
+    "net.oauth.signature":1503,
+    "net.oauth.signature.pem":562
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-oauth-service-provider-spi-1.0.8.1.jar":{
+  "crc64":6208435885586379752,
+  "percentage":0.01,
+  "lines":394,
+  "breakdown.internal":{
+    "com.atlassian.oauth.serviceprovider":394
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar":{
+  "crc64":8593122382162096971,
+  "percentage":0.03,
+  "lines":2074,
+  "breakdown.internal":{
+    "com.atlassian.plugins.rest":2074
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/activation-1.1.jar":{
+  "crc64":9210197848386492341,
+  "percentage":0.11,
+  "lines":7962,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.activation.registries":1499,
+    "com.sun.activation.viewers":474,
+    "javax.activation":5989
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/asm-3.1.jar":{
+  "crc64":1481233907181649026,
+  "percentage":0.07,
+  "lines":5000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.objectweb.asm":4000,
+    "org.objectweb.asm.signature":600
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/atlassian-rest-common-1.0.5.jar":{
+  "crc64":183782967494348685,
+  "percentage":0.02,
+  "lines":1588,
+  "breakdown.internal":{
+    "com.atlassian.plugins.rest":1588
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/commons-fileupload-1.2.1.jar":{
+  "crc64":8329860696611733132,
+  "percentage":0.07,
+  "lines":4892,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.fileupload":4892
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/jackson-asl-0.9.4.jar":{
+  "crc64":1125326802775658343,
+  "percentage":0.2,
+  "lines":14268,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.codehaus.jackson":1724,
+    "org.codehaus.jackson.impl":6348,
+    "org.codehaus.jackson.io":1401,
+    "org.codehaus.jackson.map":2238,
+    "org.codehaus.jackson.sym":1621,
+    "org.codehaus.jackson.util":936
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/jaxb-api-2.1.jar":{
+  "crc64":3714479934088552276,
+  "percentage":0.1,
+  "lines":7298,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.xml.bind":4351,
+    "javax.xml.bind.annotation":556,
+    "javax.xml.bind.attachment":268,
+    "javax.xml.bind.helpers":1619,
+    "javax.xml.bind.util":504
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/jaxb-impl-2.1.10.jar":{
+  "crc64":357680288138600523,
+  "percentage":0.77,
+  "lines":53441,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.istack":551,
+    "com.sun.istack.localization":346,
+    "com.sun.xml.bind":47046,
+    "com.sun.xml.txw2":5498
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/jersey-core-1.0.3-atlassian-1.jar":{
+  "crc64":8647292869484988733,
+  "percentage":0.23,
+  "lines":16357,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.istack.localization":346,
+    "com.sun.jersey.api":2999,
+    "com.sun.jersey.core":11471,
+    "com.sun.jersey.impl":909,
+    "com.sun.jersey.spi":632
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/jersey-json-1.0.3-atlassian-1.jar":{
+  "crc64":3135937741365465918,
+  "percentage":0.11,
+  "lines":7732,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.jersey.api":1005,
+    "com.sun.jersey.json":6727
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/jersey-server-1.0.3-atlassian-1.jar":{
+  "crc64":8800024360114274624,
+  "percentage":0.42,
+  "lines":29423,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.jersey.api":5316,
+    "com.sun.jersey.server":17640,
+    "com.sun.jersey.spi":2898,
+    "com.sun.research.ws":3569
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/jettison-1.0.1.jar":{
+  "crc64":1324052669009486699,
+  "percentage":0.08,
+  "lines":5320,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.codehaus.jettison":891,
+    "org.codehaus.jettison.badgerfish":518,
+    "org.codehaus.jettison.json":2997,
+    "org.codehaus.jettison.mapped":873,
+    "org.codehaus.jettison.util":41
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/jsr311-api-1.0.jar":{
+  "crc64":6632184535646433757,
+  "percentage":0.04,
+  "lines":2481,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.ws.rs":115,
+    "javax.ws.rs.core":2092,
+    "javax.ws.rs.ext":274
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-rest-module-1.0.5.jar!\/META-INF\/lib\/stax-api-1.0-2.jar":{
+  "crc64":610432275601856418,
+  "percentage":0.02,
+  "lines":1047,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.xml.stream":687,
+    "javax.xml.stream.events":1000,
+    "javax.xml.stream.util":360
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-template-renderer-api-1.0.5.jar":{
+  "crc64":157360433016629957,
+  "percentage":0.0,
+  "lines":225,
+  "breakdown.internal":{
+    "com.atlassian.templaterenderer":49,
+    "com.atlassian.templaterenderer.plugins":176
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/atlassian-template-renderer-velocity16-plugin-1.0.5.jar":{
+  "crc64":5283168208155257053,
+  "percentage":0.71,
+  "lines":49627,
+  "breakdown.internal":{
+    "com.atlassian.templaterenderer.velocity":716,
+    "com.atlassian.velocity.htmlsafe":1755
+  },
+  "breakdown.external":{
+    "org.apache.velocity":536,
+    "org.apache.velocity.anakia":1801,
+    "org.apache.velocity.app":3382,
+    "org.apache.velocity.context":1720,
+    "org.apache.velocity.convert":309,
+    "org.apache.velocity.exception":684,
+    "org.apache.velocity.io":679,
+    "org.apache.velocity.runtime":32137,
+    "org.apache.velocity.servlet":706,
+    "org.apache.velocity.texen":1477,
+    "org.apache.velocity.util":3725
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/auiplugin-2.1.3.jar":{
+  "crc64":8018281093350043210,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/bndlib-0.0.255.jar":{
+  "crc64":5649233741929694231,
+  "percentage":0.1,
+  "lines":7237,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "aQute.lib.filter":346,
+    "aQute.lib.header":100,
+    "aQute.lib.osgi":6586,
+    "aQute.lib.qtokens":112,
+    "aQute.lib.reporter":100,
+    "aQute.lib.spring":93
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/com.springsource.com.sun.syndication-0.9.0.jar":{
+  "crc64":4254793802719506564,
+  "percentage":0.28,
+  "lines":19192,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.syndication.feed":11175,
+    "com.sun.syndication.io":8017
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/com.springsource.org.jdom-1.0.0.jar":{
+  "crc64":7046058241091394645,
+  "percentage":0.29,
+  "lines":20056,
+  "breakdown.internal":{
+    "":137
+  },
+  "breakdown.external":{
+    "org.jdom":9091,
+    "org.jdom.adapters":1121,
+    "org.jdom.filter":967,
+    "org.jdom.input":2941,
+    "org.jdom.output":4132,
+    "org.jdom.transform":969,
+    "org.jdom.xpath":698
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/httpclient-osgi-4.0.jar":{
+  "crc64":5230317556867995733,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/httpclient-osgi-4.0.jar!\/apache-mime4j-0.6.jar":{
+  "crc64":2599579047345722454,
+  "percentage":0.46,
+  "lines":31801,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.james.mime4j":31801
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/httpclient-osgi-4.0.jar!\/commons-codec-1.3.jar":{
+  "crc64":5242961490448327723,
+  "percentage":0.07,
+  "lines":4665,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.codec":4665
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/httpclient-osgi-4.0.jar!\/httpclient-4.0.jar":{
+  "crc64":8874845375376330073,
+  "percentage":0.34,
+  "lines":23503,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.http.auth":1453,
+    "org.apache.http.client":3077,
+    "org.apache.http.conn":4112,
+    "org.apache.http.cookie":541,
+    "org.apache.http.impl":14320
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/httpclient-osgi-4.0.jar!\/httpmime-4.0.jar":{
+  "crc64":3896516373078910243,
+  "percentage":0.02,
+  "lines":1191,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.http.entity":1191
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/httpcore-osgi-4.0.jar":{
+  "crc64":7336592331109113982,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/httpcore-osgi-4.0.jar!\/httpcore-4.0.jar":{
+  "crc64":3664635308168891151,
+  "percentage":0.24,
+  "lines":16747,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.http":1109,
+    "org.apache.http.entity":1178,
+    "org.apache.http.impl":5204,
+    "org.apache.http.io":300,
+    "org.apache.http.message":4279,
+    "org.apache.http.params":979,
+    "org.apache.http.protocol":2423,
+    "org.apache.http.util":1575
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/httpcore-osgi-4.0.jar!\/httpcore-nio-4.0.jar":{
+  "crc64":7247693321864335300,
+  "percentage":0.18,
+  "lines":12631,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.http.impl":7259,
+    "org.apache.http.nio":5372
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/icu4j-3.8-1.jar":{
+  "crc64":760362788895913165,
+  "percentage":2.52,
+  "lines":175558,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.ibm.icu.impl":34256,
+    "com.ibm.icu.lang":8390,
+    "com.ibm.icu.math":5002,
+    "com.ibm.icu.text":98410,
+    "com.ibm.icu.util":29500
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/jira-bamboo-plugin-4.1.1.jar":{
+  "crc64":7191121522756727191,
+  "percentage":0.06,
+  "lines":3917,
+  "breakdown.internal":{
+    "com.atlassian.jira.plugin":3917
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/jira-fisheye-plugin-3.0.16.jar":{
+  "crc64":6571162703738301969,
+  "percentage":0.26,
+  "lines":18098,
+  "breakdown.internal":{
+    "com.atlassian.jirafisheyeplugin":1924,
+    "com.atlassian.jirafisheyeplugin.cache":235,
+    "com.atlassian.jirafisheyeplugin.charts":954,
+    "com.atlassian.jirafisheyeplugin.config":1900,
+    "com.atlassian.jirafisheyeplugin.crucible":422,
+    "com.atlassian.jirafisheyeplugin.domain":1298,
+    "com.atlassian.jirafisheyeplugin.filter":53,
+    "com.atlassian.jirafisheyeplugin.gadgets":363,
+    "com.atlassian.jirafisheyeplugin.issuetabpanel":905,
+    "com.atlassian.jirafisheyeplugin.operation":105,
+    "com.atlassian.jirafisheyeplugin.perforce":1603,
+    "com.atlassian.jirafisheyeplugin.plugin":136,
+    "com.atlassian.jirafisheyeplugin.portal":632,
+    "com.atlassian.jirafisheyeplugin.projecttabpanel":1055,
+    "com.atlassian.jirafisheyeplugin.renderer":135,
+    "com.atlassian.jirafisheyeplugin.rest":1667,
+    "com.atlassian.jirafisheyeplugin.servlet":50,
+    "com.atlassian.jirafisheyeplugin.upgrade":1182,
+    "com.atlassian.jirafisheyeplugin.web":3321,
+    "com.atlassian.jirafisheyeplugin.workflow":158
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/jira-gadgets-plugin-4.1.jar":{
+  "crc64":7364879363149967972,
+  "percentage":0.11,
+  "lines":7729,
+  "breakdown.internal":{
+    "com.atlassian.jira.chartpopup":496,
+    "com.atlassian.jira.gadgets":7233
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/jira-oauth-consumer-spi-plugin-4.1.jar":{
+  "crc64":9120809609101352487,
+  "percentage":0.08,
+  "lines":5819,
+  "breakdown.internal":{
+    "com.atlassian.jira.oauth":760,
+    "com.atlassian.oauth.bridge":486,
+    "com.atlassian.oauth.consumer":230
+  },
+  "breakdown.external":{
+    "net.oauth":1417,
+    "net.oauth.client":505,
+    "net.oauth.http":356,
+    "net.oauth.signature":1503,
+    "net.oauth.signature.pem":562
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/jira-oauth-service-provider-spi-plugin-4.1.jar":{
+  "crc64":6139312541399651684,
+  "percentage":0.01,
+  "lines":772,
+  "breakdown.internal":{
+    "com.atlassian.jira.oauth":772
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/jira-rest-plugin-4.1.jar":{
+  "crc64":6397944094437217932,
+  "percentage":0.04,
+  "lines":2491,
+  "breakdown.internal":{
+    "com.atlassian.jira.rest":2491
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/jira-sal-plugin-4.1.jar":{
+  "crc64":8862295817320155592,
+  "percentage":0.02,
+  "lines":1267,
+  "breakdown.internal":{
+    "com.atlassian.sal.jira":1267
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/jira-sal-plugin-4.1.jar!\/META-INF\/lib\/sal-core-2.0.17.jar":{
+  "crc64":5360785792255422215,
+  "percentage":0.04,
+  "lines":2575,
+  "breakdown.internal":{
+    "com.atlassian.sal.core":2575
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/joda-time-1.6.jar":{
+  "crc64":4031704597417180374,
+  "percentage":0.73,
+  "lines":51006,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.joda.time":23019,
+    "org.joda.time.base":4223,
+    "org.joda.time.chrono":7621,
+    "org.joda.time.convert":2169,
+    "org.joda.time.field":5866,
+    "org.joda.time.format":6442,
+    "org.joda.time.tz":1666
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/json-20070829-1.jar":{
+  "crc64":4328222974501666255,
+  "percentage":0.07,
+  "lines":5053,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.json":5053
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/nekohtml-1.9.12-1.jar":{
+  "crc64":1350280490445017970,
+  "percentage":0.15,
+  "lines":10639,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.cyberneko.html":7455,
+    "org.cyberneko.html.filters":2240,
+    "org.cyberneko.html.parsers":672,
+    "org.cyberneko.html.xercesbridge":272
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/rome-1.0.jar":{
+  "crc64":2401672860670922473,
+  "percentage":0.29,
+  "lines":20287,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.syndication.feed":11627,
+    "com.sun.syndication.io":8660
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/sal-api-2.0.17.jar":{
+  "crc64":1884154973582662487,
+  "percentage":0.0,
+  "lines":230,
+  "breakdown.internal":{
+    "com.atlassian.sal.api":230
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/classes\/atlassian-bundled-plugins.zip!\/streams-jira-plugin-3.0.19.jar":{
+  "crc64":108438265229773672,
+  "percentage":0.06,
+  "lines":3906,
+  "breakdown.internal":{
+    "com.atlassian.streams":275,
+    "com.atlassian.streams.api":224,
+    "com.atlassian.streams.atom":178,
+    "com.atlassian.streams.builder":558,
+    "com.atlassian.streams.jira":1572,
+    "com.atlassian.streams.rest":530,
+    "com.atlassian.streams.servlet":427,
+    "com.atlassian.streams.util":90,
+    "com.atlassian.streams.velocity":52
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/activation-1.1.1.jar!\/**\/*.class":{
+  "crc64":2369055935426950627,
+  "percentage":0.12,
+  "lines":8323,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.activation.registries":1570,
+    "com.sun.activation.viewers":527,
+    "javax.activation":6226
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/alt-0.07-j1.3-j2ee1.3.jar!\/**\/*.class":{
+  "crc64":5074219151139643504,
+  "percentage":0.01,
+  "lines":542,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "alt.javax.mail":387,
+    "alt.javax.mail.internet":155
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/alt-0.07-jdk1.3.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/antlr-runtime-3.1.3.jar!\/**\/*.class":{
+  "crc64":3734892023158338213,
+  "percentage":0.17,
+  "lines":11896,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.antlr.runtime":4666,
+    "org.antlr.runtime.debug":2843,
+    "org.antlr.runtime.misc":479,
+    "org.antlr.runtime.tree":3908
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-bandana-0.1.13.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-cache-api-1.0.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-cache-memory-1.0.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-core-4.5.5.jar!\/**\/*.class":{
+  "crc64":6148363213890071246,
+  "percentage":0.19,
+  "lines":13117,
+  "breakdown.internal":{
+    "com.atlassian.core":35,
+    "com.atlassian.core.bean":166,
+    "com.atlassian.core.cron":2019,
+    "com.atlassian.core.db":56,
+    "com.atlassian.core.exception":30,
+    "com.atlassian.core.filters":777,
+    "com.atlassian.core.i18n":34,
+    "com.atlassian.core.logging":148,
+    "com.atlassian.core.propertyset":443,
+    "com.atlassian.core.servlet":94,
+    "com.atlassian.core.spool":633,
+    "com.atlassian.core.task":506,
+    "com.atlassian.core.test":159,
+    "com.atlassian.core.user":1035,
+    "com.atlassian.core.util":7016
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-event-2.0.0.jar!\/**\/*.class":{
+  "crc64":2185586500165955164,
+  "percentage":0.01,
+  "lines":773,
+  "breakdown.internal":{
+    "com.atlassian.event":39,
+    "com.atlassian.event.api":68,
+    "com.atlassian.event.config":85,
+    "com.atlassian.event.inject":28,
+    "com.atlassian.event.internal":563,
+    "com.atlassian.event.legacy":143,
+    "com.atlassian.event.spi":100
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-extras-2.2.2.jar!\/**\/*.class":{
+  "crc64":7276931128144903087,
+  "percentage":0.09,
+  "lines":6124,
+  "breakdown.internal":{
+    "com.atlassian.extras.api":108,
+    "com.atlassian.extras.common":1393,
+    "com.atlassian.extras.core":1182,
+    "com.atlassian.extras.decoder":802,
+    "com.atlassian.extras.legacy":82,
+    "com.atlassian.license":1412,
+    "com.atlassian.license.applications":717,
+    "com.atlassian.license.decoder":395,
+    "com.atlassian.license.util":33
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-gadgets-api-1.1.5.1.jar!\/**\/*.class":{
+  "crc64":1134567566597936622,
+  "percentage":0.03,
+  "lines":1889,
+  "breakdown.internal":{
+    "com.atlassian.gadgets":400,
+    "com.atlassian.gadgets.dashboard":675,
+    "com.atlassian.gadgets.plugins":163,
+    "com.atlassian.gadgets.spec":403,
+    "com.atlassian.gadgets.view":248
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-gadgets-spi-1.1.5.1.jar!\/**\/*.class":{
+  "crc64":820335312205941925,
+  "percentage":0.01,
+  "lines":552,
+  "breakdown.internal":{
+    "com.atlassian.gadgets.spi":552
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-gzipfilter-1.9.jar!\/**\/*.class":{
+  "crc64":5399383501588656213,
+  "percentage":0.52,
+  "lines":36504,
+  "breakdown.internal":{
+    "com.atlassian.gzipfilter":807,
+    "com.atlassian.gzipfilter.integration":34,
+    "com.atlassian.gzipfilter.org":35362,
+    "com.atlassian.gzipfilter.selector":164,
+    "com.atlassian.gzipfilter.util":171
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-jdk-utilities-0.4.jar!\/**\/*.class":{
+  "crc64":5280528462961298871,
+  "percentage":0.01,
+  "lines":403,
+  "breakdown.internal":{
+    "com.atlassian.jdk.utilities":403
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-jira-rpc-plugin-4.1.1-1.jar!\/**\/*.class":{
+  "crc64":5834642694829751254,
+  "percentage":0.13,
+  "lines":9261,
+  "breakdown.internal":{
+    "com.atlassian.jira.rpc":9261
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-johnson-0.10.jar!\/**\/*.class":{
+  "crc64":1848761780427889960,
+  "percentage":0.02,
+  "lines":1117,
+  "breakdown.internal":{
+    "com.atlassian.johnson":78,
+    "com.atlassian.johnson.config":398,
+    "com.atlassian.johnson.event":329,
+    "com.atlassian.johnson.filters":312,
+    "com.atlassian.johnson.setup":34
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-mail-1.16.jar!\/**\/*.class":{
+  "crc64":7387594044569522048,
+  "percentage":0.05,
+  "lines":3147,
+  "breakdown.internal":{
+    "com.atlassian.mail":1467,
+    "com.atlassian.mail.config":135,
+    "com.atlassian.mail.queue":283,
+    "com.atlassian.mail.server":1262
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-oauth-api-1.0.8.1.jar!\/**\/*.class":{
+  "crc64":8830109761690048856,
+  "percentage":0.01,
+  "lines":624,
+  "breakdown.internal":{
+    "com.atlassian.oauth":439,
+    "com.atlassian.oauth.util":185
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-ofbiz-2.7.3.jar!\/**\/*.class":{
+  "crc64":3044793990239196834,
+  "percentage":0.03,
+  "lines":1857,
+  "breakdown.internal":{
+    "com.atlassian.core.ofbiz":1857
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-osuser-1.1.1.jar!\/**\/*.class":{
+  "crc64":3212531340142829395,
+  "percentage":0.1,
+  "lines":6716,
+  "breakdown.internal":{
+    "com.opensymphony.user":1133,
+    "com.opensymphony.user.provider":5455,
+    "com.opensymphony.user.util":128
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-p4package-2007.12.14.jar!\/**\/*.class":{
+  "crc64":6911611696316254601,
+  "percentage":0.14,
+  "lines":9523,
+  "breakdown.internal":{
+    "com.perforce.api":9523
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-core-2.4.4.jar!\/**\/*.class":{
+  "crc64":8779016193644539826,
+  "percentage":0.16,
+  "lines":11352,
+  "breakdown.internal":{
+    "com.atlassian.plugin":869,
+    "com.atlassian.plugin.classloader":777,
+    "com.atlassian.plugin.descriptors":780,
+    "com.atlassian.plugin.elements":278,
+    "com.atlassian.plugin.event":623,
+    "com.atlassian.plugin.factories":292,
+    "com.atlassian.plugin.hostcontainer":121,
+    "com.atlassian.plugin.impl":1197,
+    "com.atlassian.plugin.loaders":975,
+    "com.atlassian.plugin.manager":1668,
+    "com.atlassian.plugin.parsers":351,
+    "com.atlassian.plugin.predicate":139,
+    "com.atlassian.plugin.repositories":61,
+    "com.atlassian.plugin.url":309,
+    "com.atlassian.plugin.util":2373
+  },
+  "breakdown.external":{
+    "org.codehaus.classworlds.uberjar":539
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/**\/*.class":{
+  "crc64":8109421429080007226,
+  "percentage":0.11,
+  "lines":7346,
+  "breakdown.internal":{
+    "com.atlassian.plugin.osgi":7346
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip":{
+  "crc64":7136478466251248350,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/atlassian-plugins-osgi-bridge-2.4.4.jar":{
+  "crc64":8747197087170373894,
+  "percentage":0.01,
+  "lines":382,
+  "breakdown.internal":{
+    "com.atlassian.plugin.osgi":382
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/atlassian-plugins-osgi-logging-2.4.4.jar":{
+  "crc64":4434705633852508876,
+  "percentage":0.05,
+  "lines":3390,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.logging":507,
+    "org.slf4j":541,
+    "org.slf4j.helpers":1387,
+    "org.slf4j.impl":955,
+    "org.slf4j.spi":100
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/atlassian-plugins-osgi-logging-2.4.4.jar!\/META-INF\/lib\/jcl-over-slf4j-1.5.6.jar":{
+  "crc64":6782008963030335461,
+  "percentage":0.03,
+  "lines":1903,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.logging":1903
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/atlassian-plugins-osgi-logging-2.4.4.jar!\/META-INF\/lib\/slf4j-api-1.5.6.jar":{
+  "crc64":6311897667607511801,
+  "percentage":0.03,
+  "lines":1928,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.slf4j":541,
+    "org.slf4j.helpers":1387,
+    "org.slf4j.spi":100
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/atlassian-plugins-osgi-logging-2.4.4.jar!\/META-INF\/lib\/slf4j-log4j12-1.5.6.jar":{
+  "crc64":9010198063350813723,
+  "percentage":0.01,
+  "lines":939,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.slf4j.impl":939
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/atlassian-plugins-osgi-spring-extender-2.4.4.jar":{
+  "crc64":3204346946587441864,
+  "percentage":0.01,
+  "lines":581,
+  "breakdown.internal":{
+    "com.atlassian.plugin.osgi":85
+  },
+  "breakdown.external":{
+    "org.springframework.osgi.extender":496
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/atlassian-plugins-osgi-spring-extender-2.4.4.jar!\/META-INF\/lib\/spring-osgi-extender-1.2.0.jar":{
+  "crc64":965175580087533916,
+  "percentage":0.08,
+  "lines":5566,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.springframework.osgi.extender":4854,
+    "org.springframework.osgi.io":712
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/com.springsource.org.aopalliance-1.0.0.jar":{
+  "crc64":2987383221818135200,
+  "percentage":0.0,
+  "lines":73,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.aopalliance.aop":73,
+    "org.aopalliance.intercept":100
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/spring-2.5.6.jar":{
+  "crc64":2124366139389650907,
+  "percentage":2.93,
+  "lines":203907,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.aopalliance.aop":73,
+    "org.aopalliance.intercept":100,
+    "org.springframework.aop":398,
+    "org.springframework.aop.aspectj":5294,
+    "org.springframework.aop.config":1744,
+    "org.springframework.aop.framework":5428,
+    "org.springframework.aop.interceptor":1376,
+    "org.springframework.aop.scope":283,
+    "org.springframework.aop.support":3258,
+    "org.springframework.aop.target":1647,
+    "org.springframework.asm":4000,
+    "org.springframework.asm.commons":2000,
+    "org.springframework.asm.signature":600,
+    "org.springframework.beans":5104,
+    "org.springframework.beans.annotation":54,
+    "org.springframework.beans.factory":24452,
+    "org.springframework.beans.propertyeditors":2069,
+    "org.springframework.beans.support":1094,
+    "org.springframework.cache.ehcache":451,
+    "org.springframework.context":139,
+    "org.springframework.context.access":379,
+    "org.springframework.context.annotation":1930,
+    "org.springframework.context.config":523,
+    "org.springframework.context.event":564,
+    "org.springframework.context.i18n":183,
+    "org.springframework.context.support":4778,
+    "org.springframework.context.weaving":305,
+    "org.springframework.core":4071,
+    "org.springframework.core.annotation":387,
+    "org.springframework.core.enums":665,
+    "org.springframework.core.io":2780,
+    "org.springframework.core.style":473,
+    "org.springframework.core.task":366,
+    "org.springframework.core.type":1072,
+    "org.springframework.dao":1108,
+    "org.springframework.dao.annotation":215,
+    "org.springframework.dao.support":494,
+    "org.springframework.ejb.access":1083,
+    "org.springframework.ejb.config":235,
+    "org.springframework.ejb.interceptor":200,
+    "org.springframework.ejb.support":502,
+    "org.springframework.instrument.classloading":1642,
+    "org.springframework.jca.cci":2267,
+    "org.springframework.jca.context":341,
+    "org.springframework.jca.endpoint":700,
+    "org.springframework.jca.support":357,
+    "org.springframework.jca.work":722,
+    "org.springframework.jdbc":475,
+    "org.springframework.jdbc.core":10073,
+    "org.springframework.jdbc.datasource":3602,
+    "org.springframework.jdbc.object":2175,
+    "org.springframework.jdbc.support":6479,
+    "org.springframework.jms":505,
+    "org.springframework.jms.config":589,
+    "org.springframework.jms.connection":2876,
+    "org.springframework.jms.core":1378,
+    "org.springframework.jms.listener":5590,
+    "org.springframework.jms.remoting":715,
+    "org.springframework.jms.support":1337,
+    "org.springframework.jmx":92,
+    "org.springframework.jmx.access":1116,
+    "org.springframework.jmx.export":4544,
+    "org.springframework.jmx.support":1871,
+    "org.springframework.jndi":1180,
+    "org.springframework.jndi.support":205,
+    "org.springframework.mail":617,
+    "org.springframework.mail.javamail":1981,
+    "org.springframework.metadata":100,
+    "org.springframework.metadata.commons":84,
+    "org.springframework.orm":276,
+    "org.springframework.orm.hibernate3":7926,
+    "org.springframework.orm.ibatis":1341,
+    "org.springframework.orm.jdo":3107,
+    "org.springframework.orm.jpa":6654,
+    "org.springframework.orm.toplink":3433,
+    "org.springframework.remoting":223,
+    "org.springframework.remoting.caucho":1359,
+    "org.springframework.remoting.httpinvoker":1394,
+    "org.springframework.remoting.jaxrpc":1632,
+    "org.springframework.remoting.jaxws":1161,
+    "org.springframework.remoting.rmi":2591,
+    "org.springframework.remoting.soap":41,
+    "org.springframework.remoting.support":1319,
+    "org.springframework.scheduling":47,
+    "org.springframework.scheduling.backportconcurrent":1006,
+    "org.springframework.scheduling.commonj":798,
+    "org.springframework.scheduling.concurrent":998,
+    "org.springframework.scheduling.quartz":2773,
+    "org.springframework.scheduling.support":176,
+    "org.springframework.scheduling.timer":677,
+    "org.springframework.scripting":79,
+    "org.springframework.scripting.bsh":403,
+    "org.springframework.scripting.config":361,
+    "org.springframework.scripting.groovy":266,
+    "org.springframework.scripting.jruby":368,
+    "org.springframework.scripting.support":836,
+    "org.springframework.stereotype":68,
+    "org.springframework.transaction":653,
+    "org.springframework.transaction.annotation":480,
+    "org.springframework.transaction.config":456,
+    "org.springframework.transaction.interceptor":2577,
+    "org.springframework.transaction.jta":2824,
+    "org.springframework.transaction.support":3180,
+    "org.springframework.ui":239,
+    "org.springframework.ui.context":346,
+    "org.springframework.ui.freemarker":639,
+    "org.springframework.ui.jasperreports":276,
+    "org.springframework.ui.velocity":766,
+    "org.springframework.util":8028,
+    "org.springframework.util.comparator":552,
+    "org.springframework.util.xml":549,
+    "org.springframework.validation":2606,
+    "org.springframework.validation.support":62,
+    "org.springframework.web":120,
+    "org.springframework.web.context":4350,
+    "org.springframework.web.filter":1211,
+    "org.springframework.web.jsf":1138,
+    "org.springframework.web.util":2920
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/spring-osgi-annotation-1.2.0.jar":{
+  "crc64":8611147692127763768,
+  "percentage":0.01,
+  "lines":531,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.springframework.osgi.extensions":531
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/spring-osgi-core-1.2.0.jar":{
+  "crc64":2598718839753744606,
+  "percentage":0.27,
+  "lines":18962,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.springframework.osgi":61,
+    "org.springframework.osgi.bundle":498,
+    "org.springframework.osgi.compendium":1658,
+    "org.springframework.osgi.config":2357,
+    "org.springframework.osgi.context":2962,
+    "org.springframework.osgi.service":7909,
+    "org.springframework.osgi.util":3517
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-2.4.4.jar!\/osgi-framework-bundles.zip!\/spring-osgi-io-1.2.0.jar":{
+  "crc64":3812189282692477118,
+  "percentage":0.03,
+  "lines":2101,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.springframework.osgi.io":2101
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-osgi-events-2.4.4.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-servlet-2.4.4.jar!\/**\/*.class":{
+  "crc64":5480303476172183649,
+  "percentage":0.03,
+  "lines":2418,
+  "breakdown.internal":{
+    "com.atlassian.plugin.servlet":2418
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-webfragment-2.4.4.jar!\/**\/*.class":{
+  "crc64":7990478597836164534,
+  "percentage":0.02,
+  "lines":1219,
+  "breakdown.internal":{
+    "com.atlassian.plugin.web":1219
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-plugins-webresource-2.4.4.jar!\/**\/*.class":{
+  "crc64":8375391511137086442,
+  "percentage":0.05,
+  "lines":3211,
+  "breakdown.internal":{
+    "com.atlassian.plugin.servlet":1002,
+    "com.atlassian.plugin.util":6,
+    "com.atlassian.plugin.webresource":2203
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-profiling-1.8.jar!\/**\/*.class":{
+  "crc64":8550779694476551224,
+  "percentage":0.01,
+  "lines":862,
+  "breakdown.internal":{
+    "com.atlassian.util.integration":34,
+    "com.atlassian.util.profiling":828
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-renderer-3.14.jar!\/**\/*.class":{
+  "crc64":7201048136293805260,
+  "percentage":0.15,
+  "lines":10341,
+  "breakdown.internal":{
+    "com.atlassian.renderer":739,
+    "com.atlassian.renderer.attachments":122,
+    "com.atlassian.renderer.embedded":1457,
+    "com.atlassian.renderer.links":637,
+    "com.atlassian.renderer.macro":420,
+    "com.atlassian.renderer.util":516,
+    "com.atlassian.renderer.v2":4935,
+    "com.atlassian.renderer.wysiwyg":1515
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-scheduler-0.11.jar!\/**\/*.class":{
+  "crc64":1683367835819654231,
+  "percentage":0.01,
+  "lines":1037,
+  "breakdown.internal":{
+    "com.atlassian.scheduler":1037
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-seraph-2.1.3.jar!\/**\/*.class":{
+  "crc64":3054305198529561827,
+  "percentage":0.06,
+  "lines":4154,
+  "breakdown.internal":{
+    "com.atlassian.seraph":6,
+    "com.atlassian.seraph.auth":688,
+    "com.atlassian.seraph.config":670,
+    "com.atlassian.seraph.controller":33,
+    "com.atlassian.seraph.cookie":325,
+    "com.atlassian.seraph.elevatedsecurity":40,
+    "com.atlassian.seraph.filter":812,
+    "com.atlassian.seraph.interceptor":85,
+    "com.atlassian.seraph.logout":77,
+    "com.atlassian.seraph.service":411,
+    "com.atlassian.seraph.util":1092
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-trackback-0.11.jar!\/**\/*.class":{
+  "crc64":2335675655774261441,
+  "percentage":0.01,
+  "lines":742,
+  "breakdown.internal":{
+    "com.atlassian.trackback":742
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-trusted-apps-core-2.1.jar!\/**\/*.class":{
+  "crc64":5669702539452798562,
+  "percentage":0.03,
+  "lines":1919,
+  "breakdown.internal":{
+    "com.atlassian.security.auth":1919
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-trusted-apps-seraph-integration-2.1.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-util-concurrent-0.0.9.jar!\/**\/*.class":{
+  "crc64":8909133841458451184,
+  "percentage":0.04,
+  "lines":3013,
+  "breakdown.internal":{
+    "com.atlassian.util.concurrent":3013
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-velocity-0.8.jar!\/**\/*.class":{
+  "crc64":5544693302022373404,
+  "percentage":0.01,
+  "lines":384,
+  "breakdown.internal":{
+    "com.atlassian.velocity":384
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/atlassian-webwork1-1.1.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/axis-1.3.jar!\/**\/*.class":{
+  "crc64":3633056841816138353,
+  "percentage":1.98,
+  "lines":137823,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.axis":6671,
+    "org.apache.axis.attachments":6099,
+    "org.apache.axis.client":6664,
+    "org.apache.axis.collections":1200,
+    "org.apache.axis.components":4533,
+    "org.apache.axis.configuration":1705,
+    "org.apache.axis.constants":462,
+    "org.apache.axis.deployment":5095,
+    "org.apache.axis.description":3393,
+    "org.apache.axis.encoding":16504,
+    "org.apache.axis.enum":76,
+    "org.apache.axis.handlers":2861,
+    "org.apache.axis.holders":1148,
+    "org.apache.axis.i18n":1511,
+    "org.apache.axis.management":632,
+    "org.apache.axis.message":10200,
+    "org.apache.axis.monitor":200,
+    "org.apache.axis.providers":2194,
+    "org.apache.axis.schema":280,
+    "org.apache.axis.security":329,
+    "org.apache.axis.server":880,
+    "org.apache.axis.session":141,
+    "org.apache.axis.soap":594,
+    "org.apache.axis.strategies":67,
+    "org.apache.axis.transport":11537,
+    "org.apache.axis.types":5904,
+    "org.apache.axis.utils":15655,
+    "org.apache.axis.wsdl":30571,
+    "org.apache.xml.xml_soap":150,
+    "org.globus.test.bigType":186,
+    "org.globus.test.otherTypes":151,
+    "org.soapinterop":230
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/axis-jaxrpc-1.3.jar!\/**\/*.class":{
+  "crc64":3350816741631850591,
+  "percentage":0.03,
+  "lines":2191,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.xml.messaging":106,
+    "javax.xml.namespace":228,
+    "javax.xml.rpc":548,
+    "javax.xml.rpc.encoding":123,
+    "javax.xml.rpc.handler":217,
+    "javax.xml.rpc.holders":870,
+    "javax.xml.rpc.server":100,
+    "javax.xml.rpc.soap":99
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/axis-saaj-1.3.jar!\/**\/*.class":{
+  "crc64":3048139724008432015,
+  "percentage":0.03,
+  "lines":1945,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.xml.soap":1945
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/bcprov-jdk15-140.jar!\/**\/*.class":{
+  "crc64":7195046480360076086,
+  "percentage":1.53,
+  "lines":107000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.bouncycastle":51,
+    "org.bouncycastle.asn1":8000,
+    "org.bouncycastle.asn1.cmp":3000,
+    "org.bouncycastle.asn1.cms":4000,
+    "org.bouncycastle.asn1.crmf":1000,
+    "org.bouncycastle.asn1.cryptopro":700,
+    "org.bouncycastle.asn1.esf":1000,
+    "org.bouncycastle.asn1.ess":900,
+    "org.bouncycastle.asn1.gnu":17,
+    "org.bouncycastle.asn1.iana":17,
+    "org.bouncycastle.asn1.icao":200,
+    "org.bouncycastle.asn1.isismtt":1000,
+    "org.bouncycastle.asn1.kisa":17,
+    "org.bouncycastle.asn1.microsoft":17,
+    "org.bouncycastle.asn1.misc":200,
+    "org.bouncycastle.asn1.mozilla":85,
+    "org.bouncycastle.asn1.nist":100,
+    "org.bouncycastle.asn1.ntt":17,
+    "org.bouncycastle.asn1.ocsp":2000,
+    "org.bouncycastle.asn1.oiw":100,
+    "org.bouncycastle.asn1.pkcs":3000,
+    "org.bouncycastle.asn1.sec":300,
+    "org.bouncycastle.asn1.smime":300,
+    "org.bouncycastle.asn1.teletrust":100,
+    "org.bouncycastle.asn1.tsp":700,
+    "org.bouncycastle.asn1.util":100,
+    "org.bouncycastle.asn1.x500":100,
+    "org.bouncycastle.asn1.x509":10000,
+    "org.bouncycastle.asn1.x9":1000,
+    "org.bouncycastle.crypto":1000,
+    "org.bouncycastle.crypto.agreement":400,
+    "org.bouncycastle.crypto.digests":4000,
+    "org.bouncycastle.crypto.encodings":500,
+    "org.bouncycastle.crypto.engines":8000,
+    "org.bouncycastle.crypto.examples":100,
+    "org.bouncycastle.crypto.generators":1000,
+    "org.bouncycastle.crypto.io":200,
+    "org.bouncycastle.crypto.macs":1000,
+    "org.bouncycastle.crypto.modes":2000,
+    "org.bouncycastle.crypto.paddings":700,
+    "org.bouncycastle.crypto.params":3000,
+    "org.bouncycastle.crypto.prng":400,
+    "org.bouncycastle.crypto.signers":1000,
+    "org.bouncycastle.crypto.tls":1000,
+    "org.bouncycastle.crypto.util":100,
+    "org.bouncycastle.i18n":800,
+    "org.bouncycastle.i18n.filter":200,
+    "org.bouncycastle.jce":2000,
+    "org.bouncycastle.jce.examples":100,
+    "org.bouncycastle.jce.exception":100,
+    "org.bouncycastle.jce.interfaces":300,
+    "org.bouncycastle.jce.netscape":200,
+    "org.bouncycastle.jce.provider":16000,
+    "org.bouncycastle.jce.spec":1000,
+    "org.bouncycastle.math.ec":2000,
+    "org.bouncycastle.mozilla":100,
+    "org.bouncycastle.ocsp":2000,
+    "org.bouncycastle.openssl":400,
+    "org.bouncycastle.util":700,
+    "org.bouncycastle.util.encoders":1000,
+    "org.bouncycastle.util.io":100,
+    "org.bouncycastle.util.test":700,
+    "org.bouncycastle.voms":100,
+    "org.bouncycastle.x509":6000,
+    "org.bouncycastle.x509.examples":85,
+    "org.bouncycastle.x509.extension":200,
+    "org.bouncycastle.x509.util":500
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/bndlib-0.0.255.jar!\/**\/*.class":{
+  "crc64":31372314186623275,
+  "percentage":0.1,
+  "lines":7237,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "aQute.lib.filter":346,
+    "aQute.lib.header":100,
+    "aQute.lib.osgi":6586,
+    "aQute.lib.qtokens":112,
+    "aQute.lib.reporter":100,
+    "aQute.lib.spring":93
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/bsf-2.2.jar!\/**\/*.class":{
+  "crc64":5497895243630842060,
+  "percentage":0.09,
+  "lines":6000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.ibm.bsf":900,
+    "com.ibm.bsf.engines":1000,
+    "com.ibm.bsf.util":4000
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/bsh-1.2b7.jar!\/**\/*.class":{
+  "crc64":8953895345980427974,
+  "percentage":0.33,
+  "lines":23000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "bsh":18000,
+    "bsh.classpath":1000,
+    "bsh.commands":100,
+    "bsh.reflect":34,
+    "bsh.servlet":400,
+    "bsh.util":2000
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-beanutils-1.6.1.jar!\/**\/*.class":{
+  "crc64":6801581644226355367,
+  "percentage":0.26,
+  "lines":17892,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.beanutils":17892
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-codec-1.3.jar!\/**\/*.class":{
+  "crc64":4098910859692395690,
+  "percentage":0.07,
+  "lines":4665,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.codec":4665
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-collections-3.2.jar!\/**\/*.class":{
+  "crc64":312004034132314626,
+  "percentage":0.82,
+  "lines":56958,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.collections":56958
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-configuration-1.0.jar!\/**\/*.class":{
+  "crc64":2575128412681374843,
+  "percentage":0.12,
+  "lines":8124,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.configuration":8124
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-digester-1.4.1.jar!\/**\/*.class":{
+  "crc64":9128928673307022532,
+  "percentage":0.14,
+  "lines":9822,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.digester":9822
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-discovery-0.2.jar!\/**\/*.class":{
+  "crc64":1554255695932671560,
+  "percentage":0.09,
+  "lines":6115,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.discovery":6115
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-httpclient-3.0.1.jar!\/**\/*.class":{
+  "crc64":3237284291259211303,
+  "percentage":0.48,
+  "lines":33630,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.httpclient":33630
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-io-1.4.jar!\/**\/*.class":{
+  "crc64":6295597573938370587,
+  "percentage":0.22,
+  "lines":15039,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.io":15039
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jelly-1.0.jar!\/**\/*.class":{
+  "crc64":2012490116232192909,
+  "percentage":0.18,
+  "lines":12842,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.jelly":12842
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jelly-tags-email-1.0.jar!\/**\/*.class":{
+  "crc64":6180542712157982026,
+  "percentage":0.0,
+  "lines":306,
+  "breakdown.internal":{
+    "org.apache.commons.jelly":306
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jelly-tags-http-1.0.jar!\/**\/*.class":{
+  "crc64":7856049038447017687,
+  "percentage":0.02,
+  "lines":1289,
+  "breakdown.internal":{
+    "org.apache.commons.jelly":1289
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jelly-tags-log-1.0.jar!\/**\/*.class":{
+  "crc64":5072573270076099493,
+  "percentage":0.01,
+  "lines":357,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.jelly":357
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jelly-tags-regexp-1.0.jar!\/**\/*.class":{
+  "crc64":3562703095358847732,
+  "percentage":0.0,
+  "lines":183,
+  "breakdown.internal":{
+    "org.apache.commons.jelly":183
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jelly-tags-soap-1.0.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jelly-tags-sql-1.0.jar!\/**\/*.class":{
+  "crc64":2680762378453935487,
+  "percentage":0.03,
+  "lines":1990,
+  "breakdown.internal":{
+    "org.apache.commons.jelly":1769
+  },
+  "breakdown.external":{
+    "javax.servlet.jsp.jstl":221
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jelly-tags-util-1.1.1.jar!\/**\/*.class":{
+  "crc64":9131783500101496336,
+  "percentage":0.01,
+  "lines":971,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.jelly":971
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jexl-1.1.jar!\/**\/*.class":{
+  "crc64":9191049170017650491,
+  "percentage":0.18,
+  "lines":12637,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.jexl":12637
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-jrcs-diff-0.1.7.jar!\/**\/*.class":{
+  "crc64":307918053947376868,
+  "percentage":0.04,
+  "lines":2779,
+  "breakdown.internal":{
+    "org.apache.commons.jrcs":2779
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/commons-lang-2.4.jar!\/**\/*.class":{
+  "crc64":481580807519150976,
+  "percentage":0.71,
+  "lines":49583,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.lang":49583
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/crowd-integration-client-1.6.1.jar!\/**\/*.class":{
+  "crc64":7649914174269057764,
+  "percentage":0.24,
+  "lines":16920,
+  "breakdown.internal":{
+    "com.atlassian.crowd.integration":16858,
+    "com.atlassian.crowd.util":62
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/csv-20.jar!\/**\/*.class":{
+  "crc64":3914777397622760608,
+  "percentage":0.01,
+  "lines":1045,
+  "breakdown.internal":{
+    "com.mindprod.csv":1045
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/datafile-1.3.3.jar!\/**\/*.class":{
+  "crc64":248311727385376691,
+  "percentage":0.02,
+  "lines":1627,
+  "breakdown.internal":{
+    "com.infomata.data":1627
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/dom4j-1.4.jar!\/**\/*.class":{
+  "crc64":4163250991620897330,
+  "percentage":0.78,
+  "lines":54406,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.werken.saxpath":3277,
+    "org.dom4j":1208,
+    "org.dom4j.bean":562,
+    "org.dom4j.datatype":1130,
+    "org.dom4j.dom":2838,
+    "org.dom4j.dtd":361,
+    "org.dom4j.io":6792,
+    "org.dom4j.io.aelfred":6019,
+    "org.dom4j.persistence":177,
+    "org.dom4j.persistence.nativ":32,
+    "org.dom4j.rule":905,
+    "org.dom4j.rule.pattern":128,
+    "org.dom4j.swing":840,
+    "org.dom4j.tree":8123,
+    "org.dom4j.util":1252,
+    "org.dom4j.xpath":528,
+    "org.dom4j.xpp":220,
+    "org.jaxen":3428,
+    "org.jaxen.dom4j":535,
+    "org.jaxen.expr":5492,
+    "org.jaxen.expr.iter":1149,
+    "org.jaxen.function":3090,
+    "org.jaxen.function.ext":802,
+    "org.jaxen.pattern":2251,
+    "org.jaxen.util":2436,
+    "org.saxpath":264,
+    "org.saxpath.conformance":272,
+    "org.saxpath.helpers":295
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/ehcache-1.2.3.jar!\/**\/*.class":{
+  "crc64":6029265704740325889,
+  "percentage":0.24,
+  "lines":17077,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "net.sf.ehcache":3619,
+    "net.sf.ehcache.bootstrap":28,
+    "net.sf.ehcache.config":1396,
+    "net.sf.ehcache.constructs":4578,
+    "net.sf.ehcache.distribution":4374,
+    "net.sf.ehcache.event":296,
+    "net.sf.ehcache.hibernate":651,
+    "net.sf.ehcache.store":1943,
+    "net.sf.ehcache.util":192
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/glue-5.0b2.jar!\/**\/*.class":{
+  "crc64":4315431126521136522,
+  "percentage":2.67,
+  "lines":185877,
+  "breakdown.internal":{
+    "electric.application":404,
+    "electric.application.simple":253,
+    "electric.application.tools":1254,
+    "electric.application.web":1006,
+    "electric.application.web.config":90,
+    "electric.application.web.managed":484,
+    "electric.application.web.maps":243,
+    "electric.application.web.servers":166,
+    "electric.application.web.services":862,
+    "electric.application.web.servlets":760,
+    "electric.cluster":204,
+    "electric.cluster.dispatcher":287,
+    "electric.cluster.httpoversoap":338,
+    "electric.cluster.lifecycle":390,
+    "electric.cluster.manager":256,
+    "electric.cluster.monitor":356,
+    "electric.cluster.registry":146,
+    "electric.cluster.server":786,
+    "electric.cluster.tools":397,
+    "electric.console":197,
+    "electric.console.handlers":189,
+    "electric.console.services":515,
+    "electric.console.util":194,
+    "electric.directory":513,
+    "electric.directory.persistent":218,
+    "electric.fabric":429,
+    "electric.fabric.config":815,
+    "electric.fabric.console.handlers":251,
+    "electric.fabric.console.services":3122,
+    "electric.fabric.endpoints":1289,
+    "electric.fabric.endpoints.handler":46,
+    "electric.fabric.endpoints.performance":294,
+    "electric.fabric.endpoints.reference":81,
+    "electric.fabric.intermediary":424,
+    "electric.fabric.jaxrpc":1111,
+    "electric.fabric.logs":611,
+    "electric.fabric.nodes":367,
+    "electric.fabric.nodes.liveness":294,
+    "electric.fabric.rules":356,
+    "electric.fabric.rules.actions":283,
+    "electric.fabric.rules.conditions":317,
+    "electric.fabric.rules.processors":808,
+    "electric.fabric.services":1067,
+    "electric.fabric.services.broker":1414,
+    "electric.fabric.services.creation":229,
+    "electric.fabric.services.factory":46,
+    "electric.fabric.services.liveness":277,
+    "electric.fabric.services.reference":213,
+    "electric.fabric.services.registry":410,
+    "electric.fabric.services.selection":169,
+    "electric.fabric.tools":143,
+    "electric.fabric.util":75,
+    "electric.getpost":160,
+    "electric.getpost.wsdl":435,
+    "electric.glue":26,
+    "electric.glue.context":1373,
+    "electric.glue.enterprise.config":260,
+    "electric.glue.enterprise.console":1879,
+    "electric.glue.pro.config":1180,
+    "electric.glue.pro.console":2344,
+    "electric.glue.std.config":1592,
+    "electric.holder":105,
+    "electric.holder.tools":153,
+    "electric.http":1552,
+    "electric.http.authentication":36,
+    "electric.http.authentication.basic":97,
+    "electric.http.authentication.digest":290,
+    "electric.http.cookies":589,
+    "electric.http.loader":63,
+    "electric.jaxm":1883,
+    "electric.jaxrpc":1061,
+    "electric.jsp":131,
+    "electric.net.broadcast":305,
+    "electric.net.channel":341,
+    "electric.net.event":380,
+    "electric.net.socket":924,
+    "electric.net.socket.ssl":558,
+    "electric.net.socket.tcp":91,
+    "electric.proxy":100,
+    "electric.proxy.chain":197,
+    "electric.proxy.handler":286,
+    "electric.proxy.rebind":199,
+    "electric.proxy.tools":142,
+    "electric.registry":736,
+    "electric.registry.compound":248,
+    "electric.registry.directory":189,
+    "electric.registry.local":172,
+    "electric.registry.nopath":87,
+    "electric.registry.rebind":80,
+    "electric.registry.security":78,
+    "electric.security":80,
+    "electric.security.acl":540,
+    "electric.security.basic":196,
+    "electric.security.credentials":143,
+    "electric.security.guards":77,
+    "electric.security.guards.path":64,
+    "electric.security.jaas":358,
+    "electric.server":225,
+    "electric.server.http":860,
+    "electric.server.http.detectors":103,
+    "electric.server.jms":2046,
+    "electric.server.jms.j2ee":165,
+    "electric.server.jms.jbossmq":117,
+    "electric.server.jms.mqseries":510,
+    "electric.server.jms.sonicmq":232,
+    "electric.server.jms.swiftmq":268,
+    "electric.server.jms.tibco":223,
+    "electric.server.jms.wsdl":102,
+    "electric.service":31,
+    "electric.service.descriptor":691,
+    "electric.service.descriptor.initializer":300,
+    "electric.service.ejb":562,
+    "electric.service.ejb.client":578,
+    "electric.service.ejb.server":164,
+    "electric.service.instrumentation":491,
+    "electric.service.instrumentation.listener":167,
+    "electric.service.object":698,
+    "electric.service.reference":96,
+    "electric.service.virtual":272,
+    "electric.service.wrapper":63,
+    "electric.servlet":5582,
+    "electric.servlet.authenticators":51,
+    "electric.servlet.authenticators.basic":121,
+    "electric.servlet.authenticators.digest":239,
+    "electric.servlet.authorizers":17,
+    "electric.servlet.authorizers.servlet":140,
+    "electric.servlet.authorizers.siteminder":961,
+    "electric.servlet.cookies":265,
+    "electric.servlet.dispatcher":1052,
+    "electric.servlet.filters":487,
+    "electric.servlet.httpget":351,
+    "electric.servlet.locales":218,
+    "electric.servlet.sessions":336,
+    "electric.servlet.streams":223,
+    "electric.servlet.util":107,
+    "electric.servlet.webinf":374,
+    "electric.session":79,
+    "electric.soap":2004,
+    "electric.soap.actor":84,
+    "electric.soap.handlers":255,
+    "electric.soap.handlers.chain":49,
+    "electric.soap.handlers.interceptor":96,
+    "electric.soap.handlers.logging":93,
+    "electric.soap.handlers.setup":102,
+    "electric.soap.handlers.splice":60,
+    "electric.soap.http.handler":584,
+    "electric.soap.http.reference":597,
+    "electric.soap.java.reference":262,
+    "electric.soap.jms.handler":217,
+    "electric.soap.jms.reference":360,
+    "electric.soap.local.handlers":691,
+    "electric.soap.local.reference":190,
+    "electric.soap.references":281,
+    "electric.soap.references.balance":136,
+    "electric.soap.references.chain":50,
+    "electric.soap.references.interceptor":135,
+    "electric.soap.references.logging":110,
+    "electric.soap.references.rebind":247,
+    "electric.soap.references.splice":87,
+    "electric.soap.registry":216,
+    "electric.soap.routing":545,
+    "electric.soap.rpc":782,
+    "electric.soap.security":535,
+    "electric.soap.security.authenticators":447,
+    "electric.soap.security.encryption":1351,
+    "electric.soap.security.guards":521,
+    "electric.soap.security.handlers":281,
+    "electric.soap.security.initializer":396,
+    "electric.soap.security.references":238,
+    "electric.soap.security.signature":1691,
+    "electric.soap.security.tokens":789,
+    "electric.soap.security.util":260,
+    "electric.soap.util":488,
+    "electric.soap.virtual":57,
+    "electric.soap.wsdl":3964,
+    "electric.soap.wsdl.personality":74,
+    "electric.soap.wsdl.util":74,
+    "electric.sql":460,
+    "electric.sql.mapping":121,
+    "electric.transaction":173,
+    "electric.uddi":13003,
+    "electric.uddi.admin":276,
+    "electric.uddi.client":989,
+    "electric.uddi.registry":292,
+    "electric.uddi.selectors":721,
+    "electric.uddi.server":1640,
+    "electric.uddi.server.file":96,
+    "electric.uddi.server.sql":3063,
+    "electric.uddi.server.xdb":359,
+    "electric.uddi.tools":191,
+    "electric.uddi.util":151,
+    "electric.util":1570,
+    "electric.util.array":476,
+    "electric.util.async":243,
+    "electric.util.classloader":870,
+    "electric.util.classloader.filters":50,
+    "electric.util.classpath":156,
+    "electric.util.codegen":1422,
+    "electric.util.command":163,
+    "electric.util.comparators":42,
+    "electric.util.constructor":381,
+    "electric.util.context":110,
+    "electric.util.copy":34,
+    "electric.util.crypto":832,
+    "electric.util.dictionary":1183,
+    "electric.util.dictionary.persistent":709,
+    "electric.util.dictionary.sql":456,
+    "electric.util.dictionary.transactional":670,
+    "electric.util.dime":494,
+    "electric.util.directory.filters":76,
+    "electric.util.directory.monitored":428,
+    "electric.util.exec":85,
+    "electric.util.file":345,
+    "electric.util.fileloader":100,
+    "electric.util.fileloader.archive":241,
+    "electric.util.fileloader.filesystem":141,
+    "electric.util.holder":496,
+    "electric.util.holder.java":225,
+    "electric.util.html":858,
+    "electric.util.http":578,
+    "electric.util.ids":17,
+    "electric.util.interceptor":221,
+    "electric.util.io":1603,
+    "electric.util.jar":315,
+    "electric.util.java":989,
+    "electric.util.jms":181,
+    "electric.util.lex":748,
+    "electric.util.license":984,
+    "electric.util.list":398,
+    "electric.util.log":698,
+    "electric.util.mime":1718,
+    "electric.util.named":34,
+    "electric.util.path":174,
+    "electric.util.product":585,
+    "electric.util.proxy":69,
+    "electric.util.refcount":123,
+    "electric.util.reflect":2091,
+    "electric.util.resourceloader":108,
+    "electric.util.resourceloader.file":73,
+    "electric.util.resourceloader.url":33,
+    "electric.util.sample":21,
+    "electric.util.servlet.upload":336,
+    "electric.util.sorting":32,
+    "electric.util.string":684,
+    "electric.util.thread":965,
+    "electric.util.time":517,
+    "electric.util.tool":21,
+    "electric.util.wml":217,
+    "electric.webserver":501,
+    "electric.webserver.messages":45,
+    "electric.webserver.messages.ssl":188,
+    "electric.webserver.messages.tcp":58,
+    "electric.wsdl":2964,
+    "electric.wsdl.generator":164,
+    "electric.wsdl.handler":190,
+    "electric.wsdl.loader":124,
+    "electric.wsdl.parser":190,
+    "electric.wsdl.personality":68,
+    "electric.wsdl.personality.explicit":104,
+    "electric.wsdl.personality.net":51,
+    "electric.wsdl.personality.tme":53,
+    "electric.wsdl.tools":1728,
+    "electric.wsdl.util":428,
+    "electric.xdb":1252,
+    "electric.xdb.client":710,
+    "electric.xdb.server":2576,
+    "electric.xdb.store":54,
+    "electric.xdb.store.factory":118,
+    "electric.xdb.store.filesource":120,
+    "electric.xdb.store.memory":926,
+    "electric.xdb.store.selectors":85,
+    "electric.xml":8570,
+    "electric.xml.canonical":703,
+    "electric.xml.config":513,
+    "electric.xml.io":2169,
+    "electric.xml.io.accessors":928,
+    "electric.xml.io.array":1621,
+    "electric.xml.io.async":37,
+    "electric.xml.io.collections":2296,
+    "electric.xml.io.complex":2399,
+    "electric.xml.io.documents":156,
+    "electric.xml.io.elements":349,
+    "electric.xml.io.encoded":3187,
+    "electric.xml.io.exceptions":149,
+    "electric.xml.io.literal":1368,
+    "electric.xml.io.mapping":571,
+    "electric.xml.io.mime":78,
+    "electric.xml.io.model":1211,
+    "electric.xml.io.schema":2060,
+    "electric.xml.io.serialize":303,
+    "electric.xml.io.simple":2630,
+    "electric.xml.io.tools":1096,
+    "electric.xml.io.util":81,
+    "electric.xml.io.wrapper":579,
+    "electric.xml.jaxen":1005,
+    "electric.xml.jaxp":308,
+    "electric.xml.matching":514,
+    "electric.xml.sax":1056,
+    "electric.xml.substitute":377,
+    "electric.xml.tools":171,
+    "electric.xml.xpath":1299
+  },
+  "breakdown.external":{
+    "electric.util.encoding":698
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/google-collections-1.0-rc5.jar!\/**\/*.class":{
+  "crc64":6977713120529882724,
+  "percentage":0.42,
+  "lines":29269,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.google.common.annotations":51,
+    "com.google.common.base":2402,
+    "com.google.common.collect":26867
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/javacvs-2007-04-04-patched.jar!\/**\/*.class":{
+  "crc64":4786285918500579388,
+  "percentage":0.4,
+  "lines":27857,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.netbeans.lib.cvsclient":27857
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jcaptcha-all-1.0-RC6.jar!\/**\/*.class":{
+  "crc64":996428125922198630,
+  "percentage":0.22,
+  "lines":15628,
+  "breakdown.internal":{
+    "com.octo.captcha":109,
+    "com.octo.captcha.component":4970,
+    "com.octo.captcha.engine":5238,
+    "com.octo.captcha.image":481,
+    "com.octo.captcha.module":2115,
+    "com.octo.captcha.service":1893,
+    "com.octo.captcha.sound":614,
+    "com.octo.captcha.text":208
+  },
+  "breakdown.external":{
+    "com.jhlabs.image":16000,
+    "com.jhlabs.math":1000
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jcip-annotations-1.0.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jcommon-1.0.8.jar!\/**\/*.class":{
+  "crc64":7302777060274256804,
+  "percentage":0.54,
+  "lines":37434,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.keypoint":707,
+    "org.jfree":203,
+    "org.jfree.base":1118,
+    "org.jfree.base.config":600,
+    "org.jfree.base.log":565,
+    "org.jfree.base.modules":2351,
+    "org.jfree.date":2664,
+    "org.jfree.io":1145,
+    "org.jfree.layout":1807,
+    "org.jfree.resources":72,
+    "org.jfree.text":2562,
+    "org.jfree.threads":207,
+    "org.jfree.ui":9278,
+    "org.jfree.ui.about":3756,
+    "org.jfree.ui.action":1396,
+    "org.jfree.ui.tabbedui":1436,
+    "org.jfree.util":7567
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jdom-1.0.jar!\/**\/*.class":{
+  "crc64":809165180160353354,
+  "percentage":0.29,
+  "lines":20056,
+  "breakdown.internal":{
+    "":137
+  },
+  "breakdown.external":{
+    "org.jdom":9091,
+    "org.jdom.adapters":1121,
+    "org.jdom.filter":967,
+    "org.jdom.input":2941,
+    "org.jdom.output":4132,
+    "org.jdom.transform":969,
+    "org.jdom.xpath":698
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jfreechart-1.0.4.jar!\/**\/*.class":{
+  "crc64":2906892592616980279,
+  "percentage":2.33,
+  "lines":162625,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.jfree.chart":11481,
+    "org.jfree.chart.annotations":4404,
+    "org.jfree.chart.axis":19372,
+    "org.jfree.chart.block":4370,
+    "org.jfree.chart.demo":570,
+    "org.jfree.chart.editor":2758,
+    "org.jfree.chart.encoders":798,
+    "org.jfree.chart.entity":1725,
+    "org.jfree.chart.event":782,
+    "org.jfree.chart.imagemap":456,
+    "org.jfree.chart.labels":4764,
+    "org.jfree.chart.needle":1682,
+    "org.jfree.chart.plot":31567,
+    "org.jfree.chart.renderer":31092,
+    "org.jfree.chart.resources":58,
+    "org.jfree.chart.servlet":714,
+    "org.jfree.chart.title":4020,
+    "org.jfree.chart.urls":1189,
+    "org.jfree.chart.util":461,
+    "org.jfree.data":3948,
+    "org.jfree.data.category":1380,
+    "org.jfree.data.contour":755,
+    "org.jfree.data.function":246,
+    "org.jfree.data.gantt":1098,
+    "org.jfree.data.general":4690,
+    "org.jfree.data.io":200,
+    "org.jfree.data.jdbc":1145,
+    "org.jfree.data.resources":381,
+    "org.jfree.data.statistics":4398,
+    "org.jfree.data.time":11490,
+    "org.jfree.data.xml":1182,
+    "org.jfree.data.xy":9449
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/joda-time-1.6.jar!\/**\/*.class":{
+  "crc64":4633531863672487409,
+  "percentage":0.73,
+  "lines":51006,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.joda.time":23019,
+    "org.joda.time.base":4223,
+    "org.joda.time.chrono":7621,
+    "org.joda.time.convert":2169,
+    "org.joda.time.field":5866,
+    "org.joda.time.format":6442,
+    "org.joda.time.tz":1666
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jsch-0.1.23.jar!\/**\/*.class":{
+  "crc64":7356819364874106762,
+  "percentage":0.17,
+  "lines":12000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.jcraft.jsch":10000,
+    "com.jcraft.jsch.jce":1000,
+    "com.jcraft.jsch.jcraft":68
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jsr305-1.3.2.jar!\/**\/*.class":{
+  "crc64":4544088764578630701,
+  "percentage":0.0,
+  "lines":17,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.annotation":100,
+    "javax.annotation.meta":17
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jtidy-r8-20050104.jar!\/**\/*.class":{
+  "crc64":5133667114674340275,
+  "percentage":0.45,
+  "lines":31650,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.w3c.tidy":31157,
+    "org.w3c.tidy.ant":493
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/jzlib-1.0.5.jar!\/**\/*.class":{
+  "crc64":1595443948300425475,
+  "percentage":0.07,
+  "lines":4862,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.jcraft.jzlib":4862
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_ca_ES.jar!\/**\/*.class":{
+  "crc64":1213876410916465604,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_cs_CZ.jar!\/**\/*.class":{
+  "crc64":6015122222568755748,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_da_DK.jar!\/**\/*.class":{
+  "crc64":7188150913660897795,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_de_CH.jar!\/**\/*.class":{
+  "crc64":1773539983692036769,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_de_DE.jar!\/**\/*.class":{
+  "crc64":3628749639741669545,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_default.jar!\/**\/*.class":{
+  "crc64":383691449435398518,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_en_UK.jar!\/**\/*.class":{
+  "crc64":1080956688228663595,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_en_US.jar!\/**\/*.class":{
+  "crc64":1572388019060332863,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_es_ES.jar!\/**\/*.class":{
+  "crc64":4198491021580798014,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_fr_FR.jar!\/**\/*.class":{
+  "crc64":2241335284229081297,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_hu_HU.jar!\/**\/*.class":{
+  "crc64":1322256507096237516,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_it_IT.jar!\/**\/*.class":{
+  "crc64":7725725967600035152,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_ja_JP.jar!\/**\/*.class":{
+  "crc64":1938132750334116154,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_nl_BE.jar!\/**\/*.class":{
+  "crc64":5490917245568926001,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_no_NO.jar!\/**\/*.class":{
+  "crc64":4384210799405060114,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_pl_PL.jar!\/**\/*.class":{
+  "crc64":2999370621674961325,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_pt_BR.jar!\/**\/*.class":{
+  "crc64":816256681085763885,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_ru_RU.jar!\/**\/*.class":{
+  "crc64":5191481871021161642,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_sk_SK.jar!\/**\/*.class":{
+  "crc64":5824957935856487480,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_tr_TR.jar!\/**\/*.class":{
+  "crc64":3707997944433575247,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_zh_CN.jar!\/**\/*.class":{
+  "crc64":7201616544980239158,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/language_zh_TW.jar!\/**\/*.class":{
+  "crc64":1953222317690544786,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/lucene-analyzers-2.9.0.jar!\/**\/*.class":{
+  "crc64":172895281895240089,
+  "percentage":0.22,
+  "lines":15058,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.lucene.analysis":15058
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/lucene-core-2.9.0.jar!\/**\/*.class":{
+  "crc64":2445628703995085324,
+  "percentage":1.2,
+  "lines":83714,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.lucene":27,
+    "org.apache.lucene.analysis":9651,
+    "org.apache.lucene.document":2364,
+    "org.apache.lucene.index":31079,
+    "org.apache.lucene.messages":275,
+    "org.apache.lucene.queryParser":4095,
+    "org.apache.lucene.search":24726,
+    "org.apache.lucene.store":4923,
+    "org.apache.lucene.util":6574
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/mail-1.4.1.jar!\/**\/*.class":{
+  "crc64":6023277199836521825,
+  "percentage":0.88,
+  "lines":61137,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.sun.mail.handlers":703,
+    "com.sun.mail.iap":2535,
+    "com.sun.mail.imap":18823,
+    "com.sun.mail.mbox":4370,
+    "com.sun.mail.pop3":2468,
+    "com.sun.mail.smtp":2821,
+    "com.sun.mail.util":3246,
+    "javax.mail":8635,
+    "javax.mail.event":1076,
+    "javax.mail.internet":13076,
+    "javax.mail.search":2533,
+    "javax.mail.util":851
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/modz-detector-0.8.jar!\/**\/*.class":{
+  "crc64":3376284036144549144,
+  "percentage":0.01,
+  "lines":618,
+  "breakdown.internal":{
+    "com.atlassian.modzdetector":519,
+    "com.atlassian.modzdetector.ant":99
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/ofbcore-jira-entity-2.1.6.jar!\/**\/*.class":{
+  "crc64":2886489395234635781,
+  "percentage":0.28,
+  "lines":19577,
+  "breakdown.internal":{
+    "org.ofbiz.core.entity":19577
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/ofbcore-jira-extutil-2.1.6.jar!\/**\/*.class":{
+  "crc64":2020147476740618845,
+  "percentage":0.05,
+  "lines":3556,
+  "breakdown.internal":{
+    "org.ofbiz.core.calendar":1152,
+    "org.ofbiz.core.extutil":217,
+    "org.ofbiz.core.generic":305,
+    "org.ofbiz.core.report":80,
+    "org.ofbiz.core.security":543,
+    "org.ofbiz.core.serialize":436,
+    "org.ofbiz.core.stats":823
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/ofbcore-jira-service-2.1.6.jar!\/**\/*.class":{
+  "crc64":5991552837814897126,
+  "percentage":0.1,
+  "lines":7277,
+  "breakdown.internal":{
+    "org.ofbiz.core.service":7277
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/ofbcore-jira-share-2.1.6.jar!\/**\/*.class":{
+  "crc64":7728086516407549063,
+  "percentage":0.15,
+  "lines":10547,
+  "breakdown.internal":{
+    "org.ofbiz.core.config":711,
+    "org.ofbiz.core.util":9492
+  },
+  "breakdown.external":{
+    "bsh":344
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/org.apache.felix.main-2.0.0-atlassian-1.jar!\/**\/*.class":{
+  "crc64":2335092322064910253,
+  "percentage":0.7,
+  "lines":48601,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.felix.framework":26304,
+    "org.apache.felix.main":942,
+    "org.apache.felix.moduleloader":87,
+    "org.osgi.framework":8447,
+    "org.osgi.framework.hooks":68,
+    "org.osgi.framework.launch":200,
+    "org.osgi.service.application":1344,
+    "org.osgi.service.cm":593,
+    "org.osgi.service.component":77,
+    "org.osgi.service.condpermadmin":756,
+    "org.osgi.service.deploymentadmin":930,
+    "org.osgi.service.device":100,
+    "org.osgi.service.event":1133,
+    "org.osgi.service.http":86,
+    "org.osgi.service.io":100,
+    "org.osgi.service.metatype":300,
+    "org.osgi.service.monitor":795,
+    "org.osgi.service.packageadmin":300,
+    "org.osgi.service.permissionadmin":415,
+    "org.osgi.service.prefs":73,
+    "org.osgi.service.provisioning":68,
+    "org.osgi.service.startlevel":100,
+    "org.osgi.service.upnp":79,
+    "org.osgi.service.url":148,
+    "org.osgi.service.useradmin":1240,
+    "org.osgi.service.wireadmin":1237,
+    "org.osgi.util.gsm":192,
+    "org.osgi.util.measurement":1141,
+    "org.osgi.util.mobile":251,
+    "org.osgi.util.position":236,
+    "org.osgi.util.tracker":1583,
+    "org.osgi.util.xml":512
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/oro-2.0.7.jar!\/**\/*.class":{
+  "crc64":4609224305454091309,
+  "percentage":0.1,
+  "lines":7000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.oro.io":300,
+    "org.apache.oro.text":6000,
+    "org.apache.oro.util":400
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/oscore-2.2.7.jar!\/**\/*.class":{
+  "crc64":3310091763274427237,
+  "percentage":0.12,
+  "lines":8261,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.opensymphony.module.random":1617,
+    "com.opensymphony.module.sequence":488,
+    "com.opensymphony.provider":171,
+    "com.opensymphony.provider.bean":220,
+    "com.opensymphony.provider.log":313,
+    "com.opensymphony.provider.xmlprinter":257,
+    "com.opensymphony.provider.xpath":46,
+    "com.opensymphony.util":5149
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/osworkflow-2.8.0.jar!\/**\/*.class":{
+  "crc64":1141602933490059131,
+  "percentage":0.32,
+  "lines":22369,
+  "breakdown.internal":{
+    "com.opensymphony.workflow.spi":608
+  },
+  "breakdown.external":{
+    "com.opensymphony.workflow":2195,
+    "com.opensymphony.workflow.basic":67,
+    "com.opensymphony.workflow.config":451,
+    "com.opensymphony.workflow.ejb":527,
+    "com.opensymphony.workflow.loader":4716,
+    "com.opensymphony.workflow.ofbiz":127,
+    "com.opensymphony.workflow.query":454,
+    "com.opensymphony.workflow.soap":367,
+    "com.opensymphony.workflow.spi":9812,
+    "com.opensymphony.workflow.timer":204,
+    "com.opensymphony.workflow.util":2841
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/package-scanner-0.9.4.jar!\/**\/*.class":{
+  "crc64":5211025413384701090,
+  "percentage":0.01,
+  "lines":891,
+  "breakdown.internal":{
+    "org.twdata.pkgscanner":855,
+    "org.twdata.pkgscanner.pattern":36
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/pell-multipart-request-1.31.0.jar!\/**\/*.class":{
+  "crc64":1294237085339064472,
+  "percentage":0.03,
+  "lines":2200,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "http.utils.multipartrequest":2200
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/picocontainer-1.0.jar!\/**\/*.class":{
+  "crc64":2241243561454214614,
+  "percentage":0.04,
+  "lines":2455,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.picocontainer":320,
+    "org.picocontainer.defaults":2135
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/propertyset-1.3.jar!\/**\/*.class":{
+  "crc64":1906293300671183947,
+  "percentage":0.13,
+  "lines":8887,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.opensymphony.ejb":486,
+    "com.opensymphony.module.propertyset":8401
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/quartz-1.4.5.jar!\/**\/*.class":{
+  "crc64":5547083725472315543,
+  "percentage":0.7,
+  "lines":48488,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.quartz":10557,
+    "org.quartz.core":7024,
+    "org.quartz.ee.ejb":202,
+    "org.quartz.ee.jmx":346,
+    "org.quartz.ee.jta":379,
+    "org.quartz.ee.servlet":159,
+    "org.quartz.helpers":1143,
+    "org.quartz.impl":3731,
+    "org.quartz.impl.calendar":1155,
+    "org.quartz.impl.jdbcjobstore":11989,
+    "org.quartz.jobs":362,
+    "org.quartz.jobs.ee":606,
+    "org.quartz.plugins.history":969,
+    "org.quartz.plugins.management":163,
+    "org.quartz.plugins.xml":392,
+    "org.quartz.simpl":6421,
+    "org.quartz.spi":141,
+    "org.quartz.utils":1462,
+    "org.quartz.utils.weblogic":104,
+    "org.quartz.xml":1183
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/radeox-1.0b2-forked-22Apr2004.jar!\/**\/*.class":{
+  "crc64":141121832951037211,
+  "percentage":0.17,
+  "lines":11587,
+  "breakdown.internal":{
+    "org.radeox.test.regex":105
+  },
+  "breakdown.external":{
+    "org.radeox":120,
+    "org.radeox.api.engine":300,
+    "org.radeox.engine":130,
+    "org.radeox.engine.context":141,
+    "org.radeox.example":352,
+    "org.radeox.filter":1528,
+    "org.radeox.filter.context":89,
+    "org.radeox.filter.interwiki":124,
+    "org.radeox.filter.regex":482,
+    "org.radeox.macro":1756,
+    "org.radeox.macro.api":279,
+    "org.radeox.macro.book":243,
+    "org.radeox.macro.code":267,
+    "org.radeox.macro.list":354,
+    "org.radeox.macro.parameter":180,
+    "org.radeox.macro.table":666,
+    "org.radeox.macro.xref":138,
+    "org.radeox.regex":682,
+    "org.radeox.test":337,
+    "org.radeox.test.filter":1749,
+    "org.radeox.test.macro":1223,
+    "org.radeox.util":321,
+    "org.radeox.util.logging":226,
+    "radeox.test.groovy":95
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/sal-spi-2.0.17.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/saxon-noaelfred-6.5.5.jar!\/**\/*.class":{
+  "crc64":8982210471404729109,
+  "percentage":0.84,
+  "lines":58480,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.icl.saxon":8017,
+    "com.icl.saxon.aelfred":6319,
+    "com.icl.saxon.charcode":532,
+    "com.icl.saxon.expr":9792,
+    "com.icl.saxon.exslt":912,
+    "com.icl.saxon.functions":4218,
+    "com.icl.saxon.handlers":70,
+    "com.icl.saxon.number":552,
+    "com.icl.saxon.om":4345,
+    "com.icl.saxon.output":4769,
+    "com.icl.saxon.pattern":963,
+    "com.icl.saxon.sort":1130,
+    "com.icl.saxon.sql":384,
+    "com.icl.saxon.style":8431,
+    "com.icl.saxon.tinytree":3290,
+    "com.icl.saxon.trace":260,
+    "com.icl.saxon.tree":4496,
+    "org.w3c.xsl":100
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/sitemesh-2.3.jar!\/**\/*.class":{
+  "crc64":4090186285168925357,
+  "percentage":0.14,
+  "lines":10073,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.opensymphony.module.sitemesh":9289,
+    "com.opensymphony.sitemesh":200,
+    "com.opensymphony.sitemesh.compatability":339,
+    "com.opensymphony.sitemesh.webapp":445
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/statcvs-20060222-patched.jar!\/**\/*.class":{
+  "crc64":975685908631067725,
+  "percentage":0.18,
+  "lines":12422,
+  "breakdown.internal":{
+    "net.sf.statcvs":260,
+    "net.sf.statcvs.ant":200,
+    "net.sf.statcvs.input":2093,
+    "net.sf.statcvs.model":1574,
+    "net.sf.statcvs.output":3064,
+    "net.sf.statcvs.renderer":1955,
+    "net.sf.statcvs.reportmodel":1052,
+    "net.sf.statcvs.reports":953,
+    "net.sf.statcvs.util":1271
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/stax-api-1.0.1.jar!\/**\/*.class":{
+  "crc64":948019879528959179,
+  "percentage":0.02,
+  "lines":1298,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.xml":24,
+    "javax.xml.namespace":222,
+    "javax.xml.stream":692,
+    "javax.xml.stream.events":1000,
+    "javax.xml.stream.util":360
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/urlrewrite-2.5.2.jar!\/**\/*.class":{
+  "crc64":8402404084491345123,
+  "percentage":0.15,
+  "lines":10340,
+  "breakdown.internal":{
+    "org.tuckey.web":923
+  },
+  "breakdown.external":{
+    "org.tuckey.web.filters":9417
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/velocity-1.4-atlassian-8.jar!\/**\/*.class":{
+  "crc64":2202407311572826427,
+  "percentage":0.61,
+  "lines":42305,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.velocity":455,
+    "org.apache.velocity.anakia":1555,
+    "org.apache.velocity.app":1933,
+    "org.apache.velocity.context":925,
+    "org.apache.velocity.convert":295,
+    "org.apache.velocity.exception":213,
+    "org.apache.velocity.io":331,
+    "org.apache.velocity.runtime":27372,
+    "org.apache.velocity.servlet":690,
+    "org.apache.velocity.test":4884,
+    "org.apache.velocity.texen":1334,
+    "org.apache.velocity.util":2318
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/velocity-tools-1.3.jar!\/**\/*.class":{
+  "crc64":5339477466513853849,
+  "percentage":0.24,
+  "lines":16421,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.velocity.tools":16421
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/webwork-1.4-atlassian-4.jar!\/**\/*.class":{
+  "crc64":2513692071397374522,
+  "percentage":0.37,
+  "lines":26020,
+  "breakdown.internal":{
+    "webwork.action":1352,
+    "webwork.action.client":201,
+    "webwork.action.factory":1776,
+    "webwork.action.standard":755,
+    "webwork.config":868,
+    "webwork.config.util":327,
+    "webwork.dispatcher":1448,
+    "webwork.expr":1748,
+    "webwork.multipart":760,
+    "webwork.util":6088,
+    "webwork.util.classloader":330,
+    "webwork.util.editor":837,
+    "webwork.util.injection":76,
+    "webwork.view.jasperreports":408,
+    "webwork.view.taglib":2835,
+    "webwork.view.taglib.iterator":295,
+    "webwork.view.taglib.ui":2231,
+    "webwork.view.taglib.vui":1084,
+    "webwork.view.velocity":844,
+    "webwork.view.xslt":952,
+    "webwork.view.xslt.SAXAdapter":805
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/wsdl4j-1.6.1.jar!\/**\/*.class":{
+  "crc64":1390782918713837756,
+  "percentage":0.26,
+  "lines":18000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.ibm.wsdl":3000,
+    "com.ibm.wsdl.extensions":6000,
+    "com.ibm.wsdl.factory":85,
+    "com.ibm.wsdl.util":1000,
+    "com.ibm.wsdl.xml":1000,
+    "javax.wsdl":2000,
+    "javax.wsdl.extensions":600,
+    "javax.wsdl.extensions.http":100,
+    "javax.wsdl.extensions.mime":100,
+    "javax.wsdl.extensions.schema":300,
+    "javax.wsdl.extensions.soap":800,
+    "javax.wsdl.extensions.soap12":800,
+    "javax.wsdl.factory":200,
+    "javax.wsdl.xml":300
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/wstx-asl-3.2.4.jar!\/**\/*.class":{
+  "crc64":5365645887071636039,
+  "percentage":0.87,
+  "lines":60645,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.ctc.wstx.api":2625,
+    "com.ctc.wstx.cfg":192,
+    "com.ctc.wstx.compat":440,
+    "com.ctc.wstx.dom":1965,
+    "com.ctc.wstx.dtd":10887,
+    "com.ctc.wstx.ent":555,
+    "com.ctc.wstx.evt":3176,
+    "com.ctc.wstx.exc":351,
+    "com.ctc.wstx.io":7283,
+    "com.ctc.wstx.msv":810,
+    "com.ctc.wstx.sax":1438,
+    "com.ctc.wstx.sr":12318,
+    "com.ctc.wstx.stax":2284,
+    "com.ctc.wstx.sw":8741,
+    "com.ctc.wstx.util":4794,
+    "org.codehaus.stax2":277,
+    "org.codehaus.stax2.evt":20,
+    "org.codehaus.stax2.io":627,
+    "org.codehaus.stax2.ri":1105,
+    "org.codehaus.stax2.validation":757
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/xercesImpl-2.9.1.jar!\/**\/*.class":{
+  "crc64":2976204500776890,
+  "percentage":1.91,
+  "lines":133000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.html.dom":12000,
+    "org.apache.wml":3000,
+    "org.apache.wml.dom":6000,
+    "org.apache.xerces.dom":19000,
+    "org.apache.xerces.dom3":2000,
+    "org.apache.xerces.impl":46000,
+    "org.apache.xerces.jaxp":8000,
+    "org.apache.xerces.parsers":9000,
+    "org.apache.xerces.util":8000,
+    "org.apache.xerces.xinclude":2000,
+    "org.apache.xerces.xni":4000,
+    "org.apache.xerces.xpointer":1000,
+    "org.apache.xerces.xs":3000,
+    "org.apache.xml.serialize":5000,
+    "org.w3c.dom.html":17
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/xfire-aegis-1.2.6.jar!\/**\/*.class":{
+  "crc64":5996502679819795113,
+  "percentage":0.12,
+  "lines":8165,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.codehaus.xfire.aegis":8165
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/xfire-core-1.2.6.jar!\/**\/*.class":{
+  "crc64":2099107689534940047,
+  "percentage":0.4,
+  "lines":28203,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.codehaus.xfire":710,
+    "org.codehaus.xfire.addressing":1994,
+    "org.codehaus.xfire.attachments":963,
+    "org.codehaus.xfire.client":1245,
+    "org.codehaus.xfire.exchange":379,
+    "org.codehaus.xfire.fault":770,
+    "org.codehaus.xfire.handler":913,
+    "org.codehaus.xfire.server":124,
+    "org.codehaus.xfire.service":5310,
+    "org.codehaus.xfire.soap":1332,
+    "org.codehaus.xfire.test":777,
+    "org.codehaus.xfire.transport":3287,
+    "org.codehaus.xfire.util":7059,
+    "org.codehaus.xfire.wsdl":633,
+    "org.codehaus.xfire.wsdl11":2707
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/xml-apis-1.3.04.jar!\/**\/*.class":{
+  "crc64":1032187521815731189,
+  "percentage":0.52,
+  "lines":36000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.xml":17,
+    "javax.xml.datatype":2000,
+    "javax.xml.namespace":200,
+    "javax.xml.parsers":1000,
+    "javax.xml.transform":1000,
+    "javax.xml.transform.dom":300,
+    "javax.xml.transform.sax":500,
+    "javax.xml.transform.stream":500,
+    "javax.xml.validation":1000,
+    "javax.xml.xpath":1000,
+    "org.apache.xmlcommons":85,
+    "org.w3c.dom":2000,
+    "org.w3c.dom.bootstrap":200,
+    "org.w3c.dom.css":5000,
+    "org.w3c.dom.events":600,
+    "org.w3c.dom.html":9000,
+    "org.w3c.dom.ls":900,
+    "org.w3c.dom.ranges":400,
+    "org.w3c.dom.stylesheets":300,
+    "org.w3c.dom.traversal":300,
+    "org.w3c.dom.views":34,
+    "org.w3c.dom.xpath":200,
+    "org.xml.sax":2000,
+    "org.xml.sax.ext":900,
+    "org.xml.sax.helpers":3000
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/xmlrpc-2.0.jar!\/**\/*.class":{
+  "crc64":5443070427867366792,
+  "percentage":0.12,
+  "lines":8184,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.xmlrpc":5535,
+    "org.apache.xmlrpc.secure":825,
+    "org.apache.xmlrpc.util":129,
+    "org.xml.sax":959,
+    "uk.co.wilson.xml":736,
+    "uk.org.xml.sax":51
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/xmlsec-1.1.0.jar!\/**\/*.class":{
+  "crc64":5464227767750318628,
+  "percentage":0.34,
+  "lines":24000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.xml.security":24000
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/xpp3-1.1.3.4-RC8.jar!\/**\/*.class":{
+  "crc64":8723107967975422731,
+  "percentage":0.14,
+  "lines":9929,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.xmlpull.mxp1":3746,
+    "org.xmlpull.mxp1_serializer":1016,
+    "org.xmlpull.v1":755,
+    "org.xmlpull.v1.builder":2258,
+    "org.xmlpull.v1.dom2_builder":291,
+    "org.xmlpull.v1.sax2":466,
+    "org.xmlpull.v1.util":253,
+    "org.xmlpull.v1.wrapper":1144
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/WEB-INF\/lib\/xstream-1.1.1.jar!\/**\/*.class":{
+  "crc64":1541701249941247672,
+  "percentage":0.14,
+  "lines":9543,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.thoughtworks.xstream":836,
+    "com.thoughtworks.xstream.alias":6,
+    "com.thoughtworks.xstream.converters":3069,
+    "com.thoughtworks.xstream.core":1765,
+    "com.thoughtworks.xstream.io":3140,
+    "com.thoughtworks.xstream.mapper":727
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/includes\/js\/ajs-gadgets\/lib\/yui-compressor\/bin\/yui-compressor-ant-task-0.4.jar!\/**\/*.class":{
+  "crc64":0,
+  "percentage":0.01,
+  "lines":370,
+  "breakdown.internal":{
+    "net.noha.tools.ant":370
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/includes\/js\/ajs-gadgets\/lib\/yui-compressor\/lib\/ant.jar!\/**\/*.class":{
+  "crc64":4726251394664723994,
+  "percentage":1.69,
+  "lines":117770,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.tools.ant":108678,
+    "org.apache.tools.bzip2":3148,
+    "org.apache.tools.mail":1141,
+    "org.apache.tools.tar":2038,
+    "org.apache.tools.zip":2765
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/includes\/js\/ajs-gadgets\/lib\/yui-compressor\/lib\/jargs-1.0.jar!\/**\/*.class":{
+  "crc64":1197770301688003198,
+  "percentage":0.01,
+  "lines":525,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "jargs.gnu":525
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/includes\/js\/ajs-gadgets\/lib\/yui-compressor\/lib\/rhino-1.6R7.jar!\/**\/*.class":{
+  "crc64":4336821306845877083,
+  "percentage":2.17,
+  "lines":151154,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.mozilla.classfile":16437,
+    "org.mozilla.javascript":43801,
+    "org.mozilla.javascript.continuations":128,
+    "org.mozilla.javascript.debug":300,
+    "org.mozilla.javascript.jdk11":82,
+    "org.mozilla.javascript.jdk13":155,
+    "org.mozilla.javascript.jdk15":64,
+    "org.mozilla.javascript.optimizer":7370,
+    "org.mozilla.javascript.regexp":22744,
+    "org.mozilla.javascript.serialize":310,
+    "org.mozilla.javascript.tools":45939,
+    "org.mozilla.javascript.xml":8327,
+    "org.mozilla.javascript.xmlimpl":5797
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/includes\/js\/ajs-gadgets\/lib\/yui-compressor\/lib\/yuicompressor-2.4.2.jar!\/**\/*.class":{
+  "crc64":6000723711455733998,
+  "percentage":2.21,
+  "lines":153837,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.yahoo.platform.yui":2141,
+    "jargs.gnu":525,
+    "org.mozilla.classfile":16437,
+    "org.mozilla.javascript":43818,
+    "org.mozilla.javascript.continuations":128,
+    "org.mozilla.javascript.debug":300,
+    "org.mozilla.javascript.jdk11":82,
+    "org.mozilla.javascript.jdk13":155,
+    "org.mozilla.javascript.jdk15":64,
+    "org.mozilla.javascript.optimizer":7370,
+    "org.mozilla.javascript.regexp":22744,
+    "org.mozilla.javascript.serialize":310,
+    "org.mozilla.javascript.tools":45939,
+    "org.mozilla.javascript.xml":8327,
+    "org.mozilla.javascript.xmlimpl":5797
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/atlassian-jira\/secure\/applet\/screenshot.jar!\/**\/*.class":{
+  "crc64":1473031645361644199,
+  "percentage":0.02,
+  "lines":1347,
+  "breakdown.internal":{
+    "com.atlassian.jira.screenshot":1266,
+    "com.atlassian.jira.web":81
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/bin\/bootstrap.jar!\/**\/*.class":{
+  "crc64":5917506877157654864,
+  "percentage":0.02,
+  "lines":1463,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.catalina.loader":43,
+    "org.apache.catalina.security":202,
+    "org.apache.catalina.startup":1158,
+    "org.apache.naming":60
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/bin\/commons-daemon.jar!\/**\/*.class":{
+  "crc64":4417614131829306753,
+  "percentage":0.01,
+  "lines":681,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.daemon":681
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/bin\/tomcat-juli.jar!\/**\/*.class":{
+  "crc64":6804803708083072777,
+  "percentage":0.02,
+  "lines":1575,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.juli":950,
+    "org.apache.juli.logging":625
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/annotations-api.jar!\/**\/*.class":{
+  "crc64":8759360600381325749,
+  "percentage":0.0,
+  "lines":23,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.annotation":100,
+    "javax.annotation.security":51,
+    "javax.ejb":100,
+    "javax.persistence":23,
+    "javax.xml.ws":100
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/carol-1.5.2.jar!\/**\/*.class":{
+  "crc64":342659718327261699,
+  "percentage":0.27,
+  "lines":18491,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.objectweb.carol.cmi":6692,
+    "org.objectweb.carol.jndi":4808,
+    "org.objectweb.carol.rmi":3715,
+    "org.objectweb.carol.util":3276
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/carol-properties.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/catalina-ant.jar!\/**\/*.class":{
+  "crc64":2056311560042134031,
+  "percentage":0.08,
+  "lines":5257,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.catalina.ant":4973,
+    "org.apache.catalina.util":284
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/catalina-ha.jar!\/**\/*.class":{
+  "crc64":816780837923297941,
+  "percentage":0.15,
+  "lines":10769,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.catalina.ha":10769
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/catalina-tribes.jar!\/**\/*.class":{
+  "crc64":6878691147702708452,
+  "percentage":0.22,
+  "lines":15157,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.catalina.tribes":15157
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/catalina.jar!\/**\/*.class":{
+  "crc64":1719471148973591317,
+  "percentage":2.01,
+  "lines":140102,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache":68,
+    "org.apache.catalina":1331,
+    "org.apache.catalina.authenticator":3466,
+    "org.apache.catalina.connector":10822,
+    "org.apache.catalina.core":21852,
+    "org.apache.catalina.deploy":4057,
+    "org.apache.catalina.loader":3855,
+    "org.apache.catalina.manager":5842,
+    "org.apache.catalina.mbeans":7452,
+    "org.apache.catalina.realm":9665,
+    "org.apache.catalina.security":740,
+    "org.apache.catalina.servlets":10559,
+    "org.apache.catalina.session":8545,
+    "org.apache.catalina.ssi":3168,
+    "org.apache.catalina.startup":19720,
+    "org.apache.catalina.users":4084,
+    "org.apache.catalina.util":6978,
+    "org.apache.catalina.valves":5403,
+    "org.apache.naming":3942,
+    "org.apache.naming.factory":1239,
+    "org.apache.naming.java":106,
+    "org.apache.naming.resources":7276
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/el-api.jar!\/**\/*.class":{
+  "crc64":5461271068400294756,
+  "percentage":0.02,
+  "lines":1591,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.el":1591
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/hsqldb-1.8.0.5.jar!\/**\/*.class":{
+  "crc64":3190294622833096269,
+  "percentage":1.02,
+  "lines":71000,
+  "breakdown.internal":{
+    "":17
+  },
+  "breakdown.external":{
+    "org.hsqldb":32000,
+    "org.hsqldb.index":51,
+    "org.hsqldb.jdbc":10000,
+    "org.hsqldb.lib":8000,
+    "org.hsqldb.lib.java":100,
+    "org.hsqldb.persist":5000,
+    "org.hsqldb.resources":100,
+    "org.hsqldb.rowio":4000,
+    "org.hsqldb.scriptio":1000,
+    "org.hsqldb.store":1000,
+    "org.hsqldb.types":200,
+    "org.hsqldb.util":6000
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jasper-el.jar!\/**\/*.class":{
+  "crc64":636247505157216882,
+  "percentage":0.13,
+  "lines":9331,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.el":857,
+    "org.apache.el.lang":1379,
+    "org.apache.el.parser":6793,
+    "org.apache.el.util":302
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jasper-jdt.jar!\/**\/*.class":{
+  "crc64":6304486771787169088,
+  "percentage":1.88,
+  "lines":131082,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.eclipse.jdt.core":4045,
+    "org.eclipse.jdt.internal":127037
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jasper.jar!\/**\/*.class":{
+  "crc64":663531112325660856,
+  "percentage":0.58,
+  "lines":40093,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache":68,
+    "org.apache.jasper":3075,
+    "org.apache.jasper.compiler":21330,
+    "org.apache.jasper.el":814,
+    "org.apache.jasper.runtime":4756,
+    "org.apache.jasper.security":187,
+    "org.apache.jasper.servlet":1473,
+    "org.apache.jasper.tagplugins":1877,
+    "org.apache.jasper.util":171,
+    "org.apache.jasper.xmlparser":6410
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jcl-over-slf4j-1.5.8.jar!\/**\/*.class":{
+  "crc64":7031535425423517593,
+  "percentage":0.03,
+  "lines":1966,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.commons.logging":1966
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jonas_timer-1.4.3.jar!\/**\/*.class":{
+  "crc64":1493767426173794194,
+  "percentage":0.01,
+  "lines":556,
+  "breakdown.internal":{
+    "org.objectweb.jonas_timer":556
+  },
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jotm-1.4.3.jar!\/**\/*.class":{
+  "crc64":9124488291167751246,
+  "percentage":0.09,
+  "lines":6336,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.objectweb.jotm":5172,
+    "org.objectweb.jotm.jta":525,
+    "org.objectweb.jotm.ots":639,
+    "org.objectweb.transaction.jta":100
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jotm-iiop_stubs-1.4.3.jar!\/**\/*.class":{
+  "crc64":3320462424182919594,
+  "percentage":0.03,
+  "lines":2000,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.objectweb.jotm":2000
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jotm-jrmp_stubs-1.4.3.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jsp-api.jar!\/**\/*.class":{
+  "crc64":7070932646877255923,
+  "percentage":0.07,
+  "lines":5226,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.servlet.jsp":1668,
+    "javax.servlet.jsp.el":619,
+    "javax.servlet.jsp.tagext":2939
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jta-1.0.1.jar!\/**\/*.class":{
+  "crc64":3065892654702948727,
+  "percentage":0.01,
+  "lines":445,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.transaction":383,
+    "javax.transaction.xa":62
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jtds-1.2.2.jar!\/**\/*.class":{
+  "crc64":6169813690305517429,
+  "percentage":0.56,
+  "lines":38875,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "net.sourceforge.jtds.jdbc":30384,
+    "net.sourceforge.jtds.jdbcx":4923,
+    "net.sourceforge.jtds.ssl":482,
+    "net.sourceforge.jtds.util":3086
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/jul-to-slf4j-1.5.8.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/log4j-1.2.15.jar!\/**\/*.class":{
+  "crc64":8026358266390313055,
+  "percentage":0.48,
+  "lines":33141,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.log4j":8573,
+    "org.apache.log4j.chainsaw":1574,
+    "org.apache.log4j.config":563,
+    "org.apache.log4j.helpers":3274,
+    "org.apache.log4j.jdbc":356,
+    "org.apache.log4j.jmx":1346,
+    "org.apache.log4j.lf5":8068,
+    "org.apache.log4j.net":3475,
+    "org.apache.log4j.nt":161,
+    "org.apache.log4j.or":462,
+    "org.apache.log4j.spi":1751,
+    "org.apache.log4j.varia":1183,
+    "org.apache.log4j.xml":2355
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/mysql-connector-java-5.1.10.jar!\/**\/*.class":{
+  "crc64":6876246244645477519,
+  "percentage":1.34,
+  "lines":93144,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "com.mysql.jdbc":77444,
+    "com.mysql.jdbc.exceptions":1008,
+    "com.mysql.jdbc.integration":257,
+    "com.mysql.jdbc.interceptors":283,
+    "com.mysql.jdbc.jdbc2":10649,
+    "com.mysql.jdbc.log":1427,
+    "com.mysql.jdbc.profiler":682,
+    "com.mysql.jdbc.util":1348,
+    "org.gjt.mm.mysql":46
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/objectweb-datasource-1.4.3.jar!\/**\/*.class":{
+  "crc64":0,
+  "isDuplicate":true
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/oracle-jdbc15-11.2.0.1.0.jar!\/**\/*.class":{
+  "crc64":7703364088882599429,
+  "percentage":30.54,
+  "lines":2129175,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "oracle.core.lmx":358,
+    "oracle.core.lvf":200,
+    "oracle.jdbc":8287,
+    "oracle.jdbc.aq":1156,
+    "oracle.jdbc.connector":1531,
+    "oracle.jdbc.dcn":202,
+    "oracle.jdbc.diagnostics":191,
+    "oracle.jdbc.driver":2001378,
+    "oracle.jdbc.internal":303,
+    "oracle.jdbc.oci":36,
+    "oracle.jdbc.oracore":12447,
+    "oracle.jdbc.pool":10138,
+    "oracle.jdbc.rowset":16585,
+    "oracle.jdbc.util":224,
+    "oracle.jdbc.xa":2157,
+    "oracle.jdbc.xa.client":2558,
+    "oracle.jpub.runtime":2015,
+    "oracle.net.ano":1000,
+    "oracle.net.aso":3000,
+    "oracle.net.jdbc.TNSAddress":700,
+    "oracle.net.jdbc.nl":3000,
+    "oracle.net.jndi":661,
+    "oracle.net.ns":4517,
+    "oracle.net.nt":2098,
+    "oracle.net.resolver":2491,
+    "oracle.security.o3logon":600,
+    "oracle.security.o5logon":500,
+    "oracle.sql":56678,
+    "oracle.sql.converter":2964
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/ots-jts_1.0.jar!\/**\/*.class":{
+  "crc64":2052303849209443463,
+  "percentage":0.14,
+  "lines":9828,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.omg.CORBA":34,
+    "org.omg.CORBA.TSIdentificationPackage":14,
+    "org.omg.CosTSPortability":26,
+    "org.omg.CosTransactions":9788
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/postgresql-8.4-701.jdbc3.jar!\/**\/*.class":{
+  "crc64":6954254997963422325,
+  "percentage":0.54,
+  "lines":37686,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.postgresql":776,
+    "org.postgresql.copy":504,
+    "org.postgresql.core":2247,
+    "org.postgresql.core.types":716,
+    "org.postgresql.core.v2":1770,
+    "org.postgresql.core.v3":3816,
+    "org.postgresql.ds":220,
+    "org.postgresql.ds.common":591,
+    "org.postgresql.ds.jdbc23":801,
+    "org.postgresql.fastpath":336,
+    "org.postgresql.geometric":1013,
+    "org.postgresql.gss":273,
+    "org.postgresql.jdbc2":14763,
+    "org.postgresql.jdbc2.optional":43,
+    "org.postgresql.jdbc3":3325,
+    "org.postgresql.largeobject":1009,
+    "org.postgresql.ssl":157,
+    "org.postgresql.translation":1818,
+    "org.postgresql.util":2812,
+    "org.postgresql.xa":696
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/servlet-api.jar!\/**\/*.class":{
+  "crc64":258529689714847518,
+  "percentage":0.08,
+  "lines":5663,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "javax.servlet":1911,
+    "javax.servlet.http":3752
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/slf4j-api-1.5.8.jar!\/**\/*.class":{
+  "crc64":5293306541975417692,
+  "percentage":0.03,
+  "lines":1979,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.slf4j":575,
+    "org.slf4j.helpers":1404,
+    "org.slf4j.spi":100
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/slf4j-log4j12-1.5.8.jar!\/**\/*.class":{
+  "crc64":8783174192027073287,
+  "percentage":0.01,
+  "lines":939,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.slf4j.impl":939
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/tomcat-coyote.jar!\/**\/*.class":{
+  "crc64":7933638738427493784,
+  "percentage":1.07,
+  "lines":74307,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.coyote":1774,
+    "org.apache.coyote.ajp":4196,
+    "org.apache.coyote.http11":14052,
+    "org.apache.coyote.memory":149,
+    "org.apache.jk.apr":408,
+    "org.apache.jk.common":5865,
+    "org.apache.jk.config":2611,
+    "org.apache.jk.core":883,
+    "org.apache.jk.server":911,
+    "org.apache.tomcat.jni":1217,
+    "org.apache.tomcat.util":42241
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/tomcat-dbcp.jar!\/**\/*.class":{
+  "crc64":3833190027059677509,
+  "percentage":0.3,
+  "lines":20956,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.apache.tomcat.dbcp":20956
+  }
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/tomcat-i18n-es.jar!\/**\/*.class":{
+  "crc64":5237578997432408026,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/tomcat-i18n-fr.jar!\/**\/*.class":{
+  "crc64":3327563425340700932,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/tomcat-i18n-ja.jar!\/**\/*.class":{
+  "crc64":2715477070091079822,
+  "percentage":0.0,
+  "lines":0,
+  "breakdown.internal":{},
+  "breakdown.external":{}
+},
+  
+"2010-04-21.atlassian-jira-enterprise-4.1.1-standalone\/lib\/xapool-1.3.1.jar!\/**\/*.class":{
+  "crc64":8402379041577813404,
+  "percentage":0.11,
+  "lines":7841,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.enhydra.jdbc.core":2554,
+    "org.enhydra.jdbc.informix":277,
+    "org.enhydra.jdbc.instantdb":233,
+    "org.enhydra.jdbc.oracle":194,
+    "org.enhydra.jdbc.pool":1516,
+    "org.enhydra.jdbc.standard":2593,
+    "org.enhydra.jdbc.sybase":264,
+    "org.enhydra.jdbc.util":210
+  }
+}
+
+}

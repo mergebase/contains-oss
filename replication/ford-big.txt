@@ -1,0 +1,2 @@
+totalLines: 31670127
+fordLines:    396452
