@@ -449,37 +449,45 @@ public class ContainsOSS {
 
         Iterator var29 = result.entrySet().iterator();
 
+        StringBuilder jsonBuf = new StringBuilder();
+        StringBuilder csvBuf = new StringBuilder();
+        boolean hadSome = false;
         while (var29.hasNext()) {
+            hadSome = true;
             final Entry<String, Map> entry = (Entry) var29.next();
-            String key = entry.getKey();
-            Map value = entry.getValue();
-            StringBuilder buf = new StringBuilder();
-            Long crc64 = (Long) value.get("crc64");
-            if (!value.containsKey("isDuplicate")) {
-                Double percent = (Double) value.get("percentage");
-                Long lines = (Long) value.get("lines");
-                buf.append(percent).append(',');
-                buf.append(lines).append(',');
-                buf.append(crc64).append(',');
-                buf.append(key).append(',');
-            } else {
-                buf.append(",");
-                buf.append(",");
-                buf.append(crc64).append(',');
-                buf.append(key).append(',');
-                buf.append("duplicate");
-            }
             if (printCSV) {
-                System.out.println(buf);
+                String key = entry.getKey();
+                Map value = entry.getValue();
+                Long crc64 = (Long) value.get("crc64");
+                if (!value.containsKey("isDuplicate")) {
+                    Double percent = (Double) value.get("percentage");
+                    Long lines = (Long) value.get("lines");
+                    csvBuf.append(percent).append(',');
+                    csvBuf.append(lines).append(',');
+                    csvBuf.append(crc64).append(',');
+                    csvBuf.append(key).append(',');
+                } else {
+                    csvBuf.append(",");
+                    csvBuf.append(",");
+                    csvBuf.append(crc64).append(',');
+                    csvBuf.append(key).append(',');
+                    csvBuf.append("duplicate");
+                }
+                csvBuf.append("\n");
             } else {
-                System.out.println("  " + Java2Json.format(true, entry));
+                jsonBuf.append("  ").append(Java2Json.format(true, entry)).append(",\n");
             }
         }
 
-        if (!printCSV) {
-            System.out.println("}");
+        if (printCSV) {
+            System.out.println(csvBuf);
+        } else {
+            if (hadSome) {
+                jsonBuf.deleteCharAt(jsonBuf.length() - 2); // trailing comma
+            }
+            jsonBuf.append("\n}");
+            System.out.println(jsonBuf);
         }
-
     }
 
     private static void gatherFilesToAnalyze(File f, Set<File> regularFiles, Set<File> zipFiles) {
