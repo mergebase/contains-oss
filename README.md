@@ -1,7 +1,7 @@
 
-# contains-oss - how to use #
+# contains-oss - How To Use
 
-contains-oss examines binary Java artifacts (e.g., *.jar, *.ear, *.war, *.class, etc)
+`contains-oss` is a Java tool to examine binary Java artifacts (e.g., *.jar, *.ear, *.war, *.class, etc)
 to count the lines of code they contain, and to classify and tally each line of code as either
 "Externally Developed" (a.k.a. open-source) or "Internally Developed" (a.k.a. proprietary
 in-house code).
@@ -9,6 +9,17 @@ in-house code).
 ```
 java -jar contains-oss-2022.02.23.jar <path-to-analyze>
 ```
+
+## Requirements
+
+Requires at least Java 8.
+
+Because `contains-oss` unzips Jars completely into memory before analyzing,
+it requires around twice as much RAM (Java Heap) as the largest Jar or Zip file you plan
+to analyze.
+
+
+## Sample Output
 
 contains-oss is quite powerful and will recursively scan any supplied paths aggressively,
 including zip-files-inside-zip-files-inside-zip-files, etc.
@@ -64,18 +75,54 @@ The output (on February 23rd, 2022) should look something like this:
 }
 ```
 
-# names.uniq.gz #
+## What About *.class Files Without Debug Symbols?
 
-If a "names.uniq.gz" file exists in the current directory, "contains-oss" will use
+If there are no debug symbols in the *.class files, `contains-oss` uses the following heuristic to tally lines of code:
+Each Java method counts as 17 lines of code.
+
+In addition, `contains-oss` rounds up the total lines-of-code in this case to the nearest 100 or 1000, making it
+straightforward to spot this situation in the output. For example, consider the following snippet
+of `contains-oss` output. Notice how `org.w3c.css.sac` totaled to 2,000 lines, `org.w3c.dom.svg` totaled to 10,000 lines,
+and `org.w3c.dom.smil` totaled to 100 lines. It's very unlikely these totals came from debug symbols.
+
+```
+"..\/easybuggy\/target\/easybuggy.jar!\/.war!\/WEB-INF\/lib\/xml-apis-ext-1.3.04.jar":{
+  "crc64":169152488317647960,
+  "percentage":0.24,
+  "lines":12100,
+  "lines.internal":0,
+  "lines.external":12100,
+  "breakdown.internal":{},
+  "breakdown.external":{
+    "org.w3c.css.sac":2000,
+    "org.w3c.dom.smil":100,
+    "org.w3c.dom.svg":10000
+  }
+},
+```
+
+To see this for yourself, try cloning and building https://github.com/k-tamura/easybuggy.
+This is a great sample (unrelated to us) that happens to include a large number of Java artifacts
+without debug symbols. Note: Easybuggy builds best using `mvn package` rather than `mvn install`.
+
+
+## names.uniq.gz
+
+If a `names.uniq.gz` file exists in the current directory, `contains-oss` will use
 that file to categorize Jar file contents as either "Internal" or "External".  Any
-names that match names inside "names.uniq.gz" are considered "External".
+names that match names inside `names.uniq.gz` are considered "External".
 
-We have pre-generated a "names.uniq.gz" file and included it in our Github repo.
+We have pre-generated a `names.uniq.gz` file and included it in our Github repo.
 It contains 3,636,788 fully-qualified Java classnames that we observed across
 all artifacts we know of in Maven Central (circa January 2022).
 
 
-# contains-oss - how to build #
+# contains-oss - how to build
+
+For convenience, we have included a pre-compiled version of `contains-oss.jar` in the root
+of our repository as `./contains-oss-2022.02.23.jar`, but you can also build
+this tool yourself using the following sequence of commands:
+
 
 ```
 mvn clean
