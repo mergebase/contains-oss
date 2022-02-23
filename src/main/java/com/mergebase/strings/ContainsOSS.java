@@ -200,8 +200,8 @@ public class ContainsOSS {
             groupLines.keySet().removeAll(zeroes);
         }
 
-        lineTotal = calculateBehaviourHeuristic(lineTotal, behaviourTotal);
-        results.put(path, lineTotal);
+        // lineTotal = calculateBehaviourHeuristic(lineTotal, behaviourTotal);
+        results.put(path, tallyVals((Map) groupLinesInternal) + tallyVals((Map) groupLinesExternal));
         results.put(path + ".INTERNAL", groupLinesInternal);
         results.put(path + ".EXTERNAL", groupLinesExternal);
         HASHES.put(path, crc64);
@@ -342,13 +342,13 @@ public class ContainsOSS {
 
         if (argsList.isEmpty()) {
             System.out.println();
-            System.out.println("Usage: java -jar count-java.jar [--csv] [paths to count...]");
+            System.out.println("Usage: java -jar contains-oss.jar [paths to count...]");
             System.out.println();
-            System.out.println("About - Mergebase count-java tool (version 1.0.2)");
+            System.out.println("About - MergeBase contains-oss tool (version 2022.02.23)");
             System.out.println("        Recursively counts lines of code in jar files.");
             System.out.println();
-            System.out.println("Docs  - https://mergebase.com/count-java/");
-            System.out.println("(C) Copyright 2021 Mergebase Software Inc. All Rights Reserved.");
+            // System.out.println("Docs  - https://github.com/mergebase/contains-oss");
+            System.out.println("(C) Copyright 2022 Mergebase Software Inc. GPLv3 License. See LICENSE.TXT.");
             System.out.println();
             System.exit(100);
         }
@@ -383,6 +383,8 @@ public class ContainsOSS {
 
         TreeMap<String, Map> result = new TreeMap();
         long total = 0L;
+        long totalInternal = 0L;
+        long totalExternal = 0L;
 
         HashSet<Long> seenHashes = new HashSet<>();
         for (Map<String, Object> m : list) {
@@ -426,12 +428,18 @@ public class ContainsOSS {
                         } else {
                             subMap.put("percentage", -1.0);
                         }
-                        subMap.put("lines", val);
-                        Map subs = (Map) m.get(key + ".INTERNAL");
-                        subMap.put("breakdown.internal", subs);
+                        Map internalSubs = (Map) m.get(key + ".INTERNAL");
+                        Map externalSubs = (Map) m.get(key + ".EXTERNAL");
 
-                        subs = (Map) m.get(key + ".EXTERNAL");
-                        subMap.put("breakdown.external", subs);
+                        long internalTally = tallyVals(internalSubs);
+                        long externalTally = tallyVals(externalSubs);
+                        totalInternal += internalTally;
+                        totalExternal += externalTally;
+                        subMap.put("lines", val);
+                        subMap.put("lines.internal", internalTally);
+                        subMap.put("lines.external", externalTally);
+                        subMap.put("breakdown.internal", internalSubs);
+                        subMap.put("breakdown.external", externalSubs);
                     }
                     result.put(key, subMap);
                 }
@@ -443,8 +451,11 @@ public class ContainsOSS {
             System.out.println("percentage,lines,crc64,path");
         } else {
             System.out.println("{");
-            System.out.println("\"totalLines\":" + total + ",");
             System.out.println("\"args\":" + Java2Json.format(argsList) + ",\n");
+            System.out.println("\"totalLines\":" + total + ",");
+            System.out.println("\"totalInternal\":" + totalInternal + ",");
+            System.out.println("\"totalExternal\":" + totalExternal + ",");
+            System.out.println("\"proportionExternal\":" + ratio(totalExternal, total) + ",");
         }
 
         Iterator var29 = result.entrySet().iterator();
@@ -488,6 +499,31 @@ public class ContainsOSS {
             jsonBuf.append("\n}");
             System.out.println(jsonBuf);
         }
+    }
+
+    private static String ratio(Long top, Long bottom) {
+        if (bottom > 0) {
+            return Double.toString(((double) top / (double) bottom));
+        } else {
+            return "-1";
+        }
+    }
+
+    private static long tallyVals(Map<Object, Object> m) {
+        long total = 0;
+        if (m != null && !m.isEmpty()) {
+            for (Map.Entry<Object, Object> entry : m.entrySet()) {
+                Object v = entry.getValue();
+                if (v instanceof Number) {
+                    Number n = (Number) v;
+                    long longVal = n.longValue();
+                    if (longVal > 0) {
+                        total += longVal;
+                    }
+                }
+            }
+        }
+        return total;
     }
 
     private static void gatherFilesToAnalyze(File f, Set<File> regularFiles, Set<File> zipFiles) {
