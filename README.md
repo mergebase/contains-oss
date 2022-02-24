@@ -1,10 +1,9 @@
 
 # contains-oss - How To Use
 
-`contains-oss` is a Java tool to examine binary Java artifacts (e.g., *.jar, *.ear, *.war, *.class, etc)
-to count the lines of code they contain, and to classify and tally each line of code as either
-"Externally Developed" (a.k.a. open-source) or "Internally Developed" (a.k.a. proprietary
-in-house code).
+`contains-oss` is a Java tool that examines binary Java artifacts (e.g., *.jar, *.ear, *.war, *.class, etc),
+counts the lines of code, and classifies each line of code as either "Externally Developed" (a.k.a. open-source)
+or "Internally Developed" (a.k.a. proprietary in-house code).
 
 ```
 java -jar contains-oss-2022.02.23.jar <path-to-analyze>
