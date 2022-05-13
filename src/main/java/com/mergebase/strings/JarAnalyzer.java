@@ -1,12 +1,7 @@
 
 package com.mergebase.strings;
 
-import javassist.ClassPool;
-import javassist.CtBehavior;
-import javassist.CtClass;
-import javassist.CtConstructor;
-import javassist.CtMethod;
-import javassist.NotFoundException;
+import javassist.*;
 
 import java.io.IOException;
 import java.util.Enumeration;
@@ -136,13 +131,26 @@ public class JarAnalyzer {
         while (en.hasMoreElements()) {
             JarEntry je = (JarEntry) en.nextElement();
             String name = je.getName();
-            if (!name.contains("$") && !je.isDirectory() && name.endsWith(".class")) {
+            if (!je.isDirectory() && name.endsWith(".class")) {
                 String className = toClassName(name);
+
+                if (className.contains("$")) {
+                    int x = className.indexOf("$");
+                    className = className.substring(0, x);
+                }
 
                 try {
                     CtClass cc = this.pool.get(className);
                     ClassAnalyzer classAnalyzer = new ClassAnalyzer(cc);
                     int[] lines = classAnalyzer.countLines();
+
+                    int[] oldLines = result.get(className);
+                    if (oldLines == null) {
+                        oldLines = new int[2];
+                    }
+                    lines[0] = Math.max(lines[0], oldLines[0]);
+                    lines[1] = Math.max(lines[1], oldLines[1]);
+
                     result.put(className, lines);
                 } catch (NotFoundException var10) {
                     // System.out.println("DOH - " + className + " - " + var10);
