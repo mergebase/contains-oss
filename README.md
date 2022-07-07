@@ -7,7 +7,7 @@ to count the lines of code they contain, and to classify and tally each line of 
 in-house code).
 
 ```
-java -jar contains-oss-2022.02.23.jar <path-to-analyze>
+java -jar contains-oss-2022.07.07.jar <path-to-analyze>
 ```
 
 ## Requirements
@@ -27,7 +27,7 @@ including zip-files-inside-zip-files-inside-zip-files, etc.
 To get started, try pointing contains-oss at itself!
 
 ```
-java -jar contains-oss-2022.02.23.jar ./contains-oss-2022.02.23.jar
+java -jar contains-oss-2022.07.07.jar ./contains-oss-2022.07.07.jar
 ```
 
 The output (on February 23rd, 2022) should look something like this:
@@ -35,14 +35,14 @@ The output (on February 23rd, 2022) should look something like this:
 ```
 
 {
-"args":[".\/contains-oss-2022.02.23.jar"],
+"args":[".\/contains-oss-2022.07.07.jar"],
 
 "totalLines":104873,
 "totalInternal":3525,
 "totalExternal":101348,
 "proportionExternal":0.9663879168136699,
 
-".\/contains-oss-2022.02.23.jar!\/**\/*.class":{
+".\/contains-oss-2022.07.07.jar!\/**\/*.class":{
   "crc64":3683609628194793798,
   "percentage":100.0,
   "lines":104873,
@@ -120,12 +120,12 @@ all artifacts we know of in Maven Central (circa January 2022).
 # contains-oss - how to build
 
 For convenience, we have included a pre-compiled version of `contains-oss.jar` in the root
-of our repository as `./contains-oss-2022.02.23.jar`, but you can also build
+of our repository as `./contains-oss-2022.07.07.jar`, but you can also build
 this tool yourself using the following sequence of commands:
 
 
 ```
 mvn clean
 mvn install
-java -jar target/contains-oss-2022.02.23.jar
+java -jar target/contains-oss-2022.07.07.jar
 ```
